@@ -20,14 +20,20 @@ h1 {
 
 h2 {
     font-size: 19px;
+    line-height: 1.26;
 }
 
 h3 {
     font-size: 15px;
+    line-height: 1.47;
 }
 
 h4 {
     font-size: 12px;
+}
+
+a.text-pinkish-grey:hover {
+    color: #2b2b2b !important;
 }
 
 .inner-container {
@@ -85,8 +91,20 @@ hr.header-content-delimiter {
     color: #ffffff !important;
 }
 
+.text-pale-white {
+    color: #f7f7f7 !important;
+}
+
 .text-pinkish-grey {
     color: #bfbfbf !important;
+}
+
+.text-black {
+    color: #000;
+}
+
+.border-pinkish-grey {
+    border-color: #bfbfbf !important;
 }
 
 .bold {
@@ -95,6 +113,10 @@ hr.header-content-delimiter {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.pt-10px {
+    padding-top: 10px;
 }
 
 /* Footer */
@@ -164,4 +186,79 @@ footer .socials p {
 
 .events-block {
     margin-top: 59px;
+}
+
+.events-block-header {
+    max-width: 523px;
+}
+
+.items-choose {
+    padding: 0 70px;
+    margin: 23px 0 60px;
+}
+
+.item-choose {
+    margin-right: 17px;
+    padding-right: 17px;
+    border-right: solid 1px;
+}
+
+.item-choose a.active {
+    color: #2b2b2b !important;
+}
+
+.item-choose:last-of-type {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+.item-choose-calendar img {
+    margin-right: 5px;
+    position: relative;
+    bottom: 2px;
+}
+
+.event-title {
+    font-size: 15px;
+}
+
+.event-age {
+    border: solid 1px white;
+     -webkit-border-radius: 90%;
+    -moz-border-radius: 90%;
+    border-radius: 90%;
+    font-size: 11px;
+    padding: 4px 6px;
+    position: absolute;
+    right: 0;
+}
+
+.event {
+    height: 435px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    padding: 13px 19px;
+}
+
+.event-header {
+    padding: 30px 0 20px;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+}
+
+.events-block-content .col {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.event-content-footer {
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+.event-content-footer img {
+    position: relative;
+    top: 5px;
 }
