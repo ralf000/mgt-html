@@ -1,4 +1,6 @@
 @import "fonts.css";
+@import "paddings-margins.css";
+@import "buttons.css";
 
 body {
     font-family: "PT Sans";
@@ -115,19 +117,34 @@ hr.header-content-delimiter {
     text-transform: uppercase;
 }
 
-.pt-10px {
-    padding-top: 10px;
-}
-
 /* Footer */
+
+footer .footer-logo{
+    margin-right: 30px;
+}
 
 footer .logo {
     max-width: 65px;
 }
 
+footer .footer-column.first {
+    padding-right: 45px !important;
+}
+footer .footer-column.second {
+    margin-left: -15px;
+    padding-right: 55px;
+}
+footer .footer-column.third {
+    margin-left: -15px;
+}
+footer .footer-column.fourth {
+    margin-left: -15px;
+    padding-left: 0;
+}
+
 footer .title {
-    font-size: 15x;
-    min-height: 40px;
+    font-size: 15px;
+    min-height: 35px;
     font-weight: bold;
     line-height: 1.2;
 }
