@@ -70,8 +70,8 @@ h4 {
     color: #ffffff !important;
 }
 
-.text-grey {
-    color: #aaa !important;
+.text-pinkish-grey {
+    color: #bfbfbf !important;
 }
 
 .bold {
@@ -89,7 +89,7 @@ footer .logo {
 }
 
 footer .title {
-    font-size: 17px;
+    font-size: 15x;
     min-height: 40px;
     font-weight: bold;
     line-height: 1.2;
@@ -100,7 +100,7 @@ footer .footer-list {
 }
 
 footer .footer-list li {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 10px;
     line-height: 1.2;
 }
@@ -114,8 +114,9 @@ footer .socials {
 }
 
 footer .socials p {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 5px;
+    font-family: 'Helvetica';
 }
 
 
