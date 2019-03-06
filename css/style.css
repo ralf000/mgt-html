@@ -1,5 +1,9 @@
 @import "fonts.css";
 
+body {
+    font-family: "PT Sans";
+}
+
 .header-block {
     min-height: 373px;
 }
@@ -24,3 +28,70 @@
     margin-right: 0;
     border: none;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Intro";
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.bg-black {
+    background-color: #1a1a1a !important;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+.text-grey {
+    color: #aaa !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Footer */
+
+footer .logo {
+    max-width: 65px;
+}
+
+footer .title {
+    font-size: 17px;
+    min-height: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+footer .footer-list {
+    padding-left: 0;
+}
+
+footer .footer-list li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+footer .socials:first-of-type {
+    margin-top: 20px;
+}
+
+footer .socials {
+    margin-bottom: 10px;
+}
+
+footer .socials p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+/* End of Footer */
