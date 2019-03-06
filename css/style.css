@@ -2,6 +2,8 @@
 
 body {
     font-family: "PT Sans";
+    font-size: 14px;
+    color: #313131;
 }
 
 .container {
@@ -42,11 +44,21 @@ h4 {
 }
 
 .header-block-top {
-    height: 40px;
     padding: 20px 0;
+    height: 40px;
 }
 
-.header-block-content {
+.header-content {
+    width: 377px;
+    margin: 0 auto;
+}
+
+hr.header-content-delimiter {
+    margin: 6px 0;
+    padding: 6px 0;
+    border-top: solid 1px #979797;
+    width: 88px;
+    margin: 0 auto;
 }
 
 .top-logo {
@@ -106,6 +118,7 @@ footer .footer-list li {
     font-size: 12px;
     margin-bottom: 10px;
     line-height: 1.2;
+    list-style: none;
 }
 
 footer .socials:first-of-type {
@@ -128,6 +141,8 @@ footer .socials p {
 .top-menu-item {
     margin-right: 18px;
     text-transform: lowercase;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .top-menu-item:last-of-type {
@@ -143,4 +158,10 @@ footer .socials p {
 
 .top-menu-block:last-of-type {
     border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.events-block {
+    margin-top: 59px;
 }
