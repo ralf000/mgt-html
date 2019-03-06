@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Regular.eot');
+    src: url('../fonts/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PTSans-Regular.woff2') format('woff2'),
+        url('../fonts/PTSans-Regular.woff') format('woff'),
+        url('../fonts/PTSans-Regular.ttf') format('truetype'),
+        url('../fonts/PTSans-Regular.svg#PTSans-Regular') format('svg');
+}
+
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('../fonts/LucidaGrande.eot');
+    src: url('../fonts/LucidaGrande.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LucidaGrande.woff2') format('woff2'),
+        url('../fonts/LucidaGrande.woff') format('woff'),
+        url('../fonts/LucidaGrande.ttf') format('truetype'),
+        url('../fonts/LucidaGrande.svg#LucidaGrande') format('svg');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica-Regular.eot');
+    src: url('../fonts/Helvetica-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Helvetica-Regular.woff2') format('woff2'),
+        url('../fonts/Helvetica-Regular.woff') format('woff'),
+        url('../fonts/Helvetica-Regular.ttf') format('truetype'),
+        url('../fonts/Helvetica-Regular.svg#Helvetica-Regular') format('svg');
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro.eot');
+    src: url('../fonts/Intro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Intro.woff2') format('woff2'),
+        url('../fonts/Intro.woff') format('woff'),
+        url('../fonts/Intro.ttf') format('truetype'),
+        url('../fonts/Intro.svg#Intro') format('svg');
+}
