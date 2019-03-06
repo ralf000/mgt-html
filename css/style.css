@@ -1,5 +1,6 @@
 @import "fonts.css";
 @import "paddings-margins.css";
+@import "buttons.css";
 
 body {
     font-family: "PT Sans";
