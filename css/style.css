@@ -46,6 +46,9 @@ h4 {
     padding: 20px 0;
 }
 
+.header-block-content {
+}
+
 .top-logo {
     padding-right: 15px;
     margin-right: 15px;
@@ -70,8 +73,8 @@ h4 {
     color: #ffffff !important;
 }
 
-.text-grey {
-    color: #aaa !important;
+.text-pinkish-grey {
+    color: #bfbfbf !important;
 }
 
 .bold {
