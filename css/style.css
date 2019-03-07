@@ -36,6 +36,7 @@ h4 {
 
 .btn-md {
     padding: .575rem .85rem;
+    border-radius: 6px
 }
 
 a.text-pinkish-grey:hover {
@@ -49,6 +50,13 @@ a.text-pinkish-grey:hover {
     margin-right: auto;
     margin-left: auto;
     max-width: 1067px;
+}
+
+.inner-inner-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 881px;
 }
 
 .header-block {
@@ -93,8 +101,16 @@ hr.header-content-delimiter {
     background-color: #1a1a1a !important;
 }
 
+.bg-purple {
+    background-color: #69268c;
+}
+
 .text-white {
     color: #ffffff !important;
+}
+
+.text-yellow {
+    color: #fad100;
 }
 
 .text-pale-white {
@@ -297,4 +313,93 @@ footer .socials p {
 
 .events-block-footer {
     margin-top: 30px;
+}
+
+.subscription {
+    padding: 58px 0;
+}
+
+.subscription-text img {
+    margin-right: 8px;
+    position: relative;
+    bottom: 2px;
+}
+
+.subscription-title {
+    margin-bottom: 5px;
+}
+
+.subscription-form input[type="email"] {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    border-radius: 0;
+    padding-left: 0;
+    padding-bottom: 5px;
+    width: 70% !important;
+}
+
+.subscription-form [type="submit"] {
+    margin-left: 12px;
+}
+
+.subscription-form .custom-control {
+    margin-top: 14px;
+    opacity: 0.75;
+    font-family: PTSans;
+    font-size: 12px;
+}
+
+.subscription-form .custom-control-label::before {
+    border: solid 1px #fad100;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    padding: 4px;
+    top: .25rem;
+    left: -1.3rem;
+}
+
+.subscription-form .custom-control-input:checked~.custom-control-label::before {
+    color: black !important;
+    border-color: #fad100;
+    background-color: #fad100;
+}
+
+.subscription-form .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    top: 1px;
+}
+
+.subscription-form ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+    font-size: 13px;
+    font-style: italic;
+}
+.subscription-form :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+    opacity:  1;
+    font-size: 13px;
+    font-style: italic;
+}
+.subscription-form ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+    opacity:  1;
+    font-size: 13px;
+    font-style: italic;
+}
+.subscription-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+    font-size: 13px;
+    font-style: italic;
+}
+.subscription-form::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.subscription-form ::placeholder { /* Most modern browsers support this now. */
+    color: white;
+    font-size: 13px;
+    font-style: italic;
 }
