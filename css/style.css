@@ -129,6 +129,10 @@ hr.header-content-delimiter {
     color: #666666;
 }
 
+.text-white-four {
+    color: #f7f7f7;
+}
+
 .border-pinkish-grey {
     border-color: #bfbfbf !important;
 }
@@ -289,6 +293,51 @@ hr.header-content-delimiter {
 
 /* End of best materials */
 
+
+/* Specproject-banner */
+
+.specproject-banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    max-height: 435px;
+}
+
+.banner-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.bg-transparent-dark {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.banner-content {
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-info {
+    margin: auto;
+    text-align: center;
+}
+
+.banner-text {
+    font-size: 12px;
+    max-width: 375px;
+}
+
+/* End of Specproject-banner */
 
 /* Footer */
 
@@ -499,7 +548,7 @@ footer .socials p {
 .subscription-form .custom-control {
     margin-top: 14px;
     opacity: 0.75;
-    font-family: PTSans;
+    font-family: 'PT Sans';
     font-size: 12px;
 }
 

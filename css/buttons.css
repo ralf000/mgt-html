@@ -1,5 +1,5 @@
 .btn {    
-    font-family: PTSans;
+    font-family: 'PT Sans';
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.1px;
@@ -29,6 +29,8 @@
     color: #fff;
     background-color: #e3775b;
     border-color: #e3775b;
+    letter-spacing: 0.9px;
+    padding: 5px 20px;
 }
 
 .btn-orange:hover {
