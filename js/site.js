@@ -1,5 +1,5 @@
 $(function () {
-    $(".owl-carousel1").owlCarousel({
+    $(".owl-carousel").owlCarousel({
         items: 3,
         nav: true,
         loop: true,
@@ -17,7 +17,7 @@ $(function () {
                 nav: true
             },
             768: {
-                items: 3,
+                items: 2,
                 nav: true
             },
             992: {
