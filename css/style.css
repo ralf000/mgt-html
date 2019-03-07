@@ -107,6 +107,11 @@ hr.header-content-delimiter {
     background-color: #f5f5f5;
 }
 
+
+.text-dark {
+    color: #1b1e2d;
+}
+
 .text-white {
     color: #ffffff !important;
 }
@@ -211,7 +216,6 @@ hr.header-content-delimiter {
 }
 
 .best-materials .social-icon {
-    display: block;
     font-size: 28px;
     border: 1px solid black;
     width: 60px;
@@ -268,27 +272,34 @@ hr.header-content-delimiter {
     font-size: 14px;
 }
 
-.materials .best-item {
-    max-width: 49%;
+.material-card {
     border-radius: 6px;
     box-shadow: 0 2px 2px 0 rgba(151, 151, 151, 0.41);
     margin-bottom: 20px;
 }
 
-.materials .best-item:hover {
+.best-items .material-card {
+    max-width: 49%;
+}
+
+.material-card:hover {
     text-decoration: none;
     box-shadow: 0 2px 2px 0 rgba(95, 95, 95, 0.41);
 }
 
-.materials .item-info-container {
+.material-card .item-image {
+    text-align: center;
+}
+
+.material-card .item-info-container {
     padding: 25px 20px;
 }
 
-.materials .item-info-container .item-info-title {
+.material-card .item-info-container .item-info-title {
     text-transform: uppercase;
 }
 
-.materials .item-info-container .item-date {
+.material-card .item-info-container .item-date {
     border-top: 1px solid rgba(151, 151, 151, 0.18);
 }
 
@@ -340,6 +351,70 @@ hr.header-content-delimiter {
 }
 
 /* End of Specproject-banner */
+
+
+
+/* Potentials and Projects */
+
+.potential {
+    padding: 40px 25px;
+    border: 1px solid #eee;
+}
+
+.potential .potential-item {
+    padding: 0 10px;
+}
+
+.potential .potential-item-image {
+    display: flex;
+    border: 1px solid #979797;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.potential .potential-item-title {
+    min-height: 50px;
+}
+
+.potential .potential-item-info {
+    font-size: 12px;
+}
+
+
+.projects .material-card {
+    width: 32%;
+}
+
+.projects .item-info-text {
+    font-size: 15px;
+    min-height: 45px;
+    line-height: 1.2;
+}
+
+.projects .item-date {
+    font-size: 12px;
+    font-weight: bold;
+}
+    
+
+
+.for-specialists .material-card {
+    width: 32%;
+}
+
+.for-specialists .item-info-text {
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+/* End of Potentials and Projects */
+
+
+
+
 
 /* Footer */
 

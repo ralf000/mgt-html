@@ -18,6 +18,7 @@
 .btn-outline-orange {
     color: #2b2b2b;
     border-color: #e3775b;
+    padding: 10px 35px;
 }
 
 .btn-outline-orange:hover {
