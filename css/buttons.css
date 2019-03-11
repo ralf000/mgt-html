@@ -10,6 +10,10 @@
     text-transform: none;
 }
 
+.btn-long {
+    padding: 7px 20px !important;
+}
+
 .btn.focus, .btn:focus {
     outline: 0;
     box-shadow: none;
@@ -83,3 +87,11 @@
     border: solid 0.5px #1a1a1a;
 }
 
+.btn-slider-gallery{
+    width: 65px;
+}
+
+.btn-slider-gallery:hover {
+    box-shadow: 0 2px 10px 0 rgba(151, 151, 151, 0.18);
+    border-color: #e06647;
+}
