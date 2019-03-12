@@ -940,3 +940,18 @@ button:focus {
 }
 
 /*------------/slick-gallery----------*/
+
+
+
+/*------------select----------*/
+
+.select2-selection__arrow {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    font-size: 20px;
+}
+
+
+/*------------/select----------*/
