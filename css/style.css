@@ -260,9 +260,14 @@ hr.header-content-delimiter {
     border-color: rgba(151, 151, 151, 0.18);
 }
 
+
+
+
+
 /*------------Best-materials------------*/
 
 .best-materials .we-are-in-socials {
+    max-width: 349px;
     padding: 50px 25px;
     border: 1px solid #eee;
 }
@@ -361,8 +366,9 @@ hr.header-content-delimiter {
     margin-bottom: 20px;
 }
 
-.best-items .material-card {
-    max-width: 49%;
+.best-materials .material-card {
+    /*max-width: 49%;*/
+    max-width: 349px;
 }
 
 .material-card:hover {
@@ -390,6 +396,78 @@ hr.header-content-delimiter {
 /*------------/best-materials------------*/
 
 
+
+/*------------Cards------------*/
+
+.museum-card {
+    position: relative;
+    max-width: 349px;
+    min-height: 500px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.museum-card-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.museum-card-container {
+    /*position: absolute;
+    width: 100%;*/
+    height: 100%;
+    padding: 20px;
+    /*top: 0;
+    left: 0;*/
+}
+
+.museum-card-footer {
+    height: 100%;
+}
+
+/*------------/Cards------------*/
+
+/*------------Museum-banner------------*/
+
+.museum-banner {
+    position: relative;
+    width: 100%;
+    min-height: 435px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.museum-banner-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.museum-banner-container {
+    height: 100%;
+    padding: 20px;
+}
+
+.museum-banner-text {
+    max-width: 420px;
+}
+
+
+
+/*------------/Museum-banner------------*/
+
 /*------------Specproject-banner------------*/
 
 .specproject-banner {
@@ -406,6 +484,7 @@ hr.header-content-delimiter {
     top: 0;
     left: 0;
 }
+
 
 .bg-transparent-dark {
     position: absolute;

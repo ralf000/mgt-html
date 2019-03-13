@@ -30,6 +30,19 @@
     border-color: #e06647;
 }
 
+.btn-outline-orange-bg-dark {
+    color: #2b2b2b;
+    border-color: #e3775b;
+    padding: 10px 35px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.btn-outline-orange-bg-dark:hover {
+    box-shadow: 0 2px 10px 0 rgba(151, 151, 151, 0.18);
+    border-color: #e06647;
+    background-color: rgba(0,0,0,0.4);
+}
+
 .btn-orange {
     color: #fff;
     background-color: #e3775b;
