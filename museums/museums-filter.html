@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/font-awesome/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style-adaptive.css" />
+    <link rel="stylesheet" href="../css/select.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="../js/holder.min.js" type="text/javascript"></script>
+    <script src="../js/site.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="../js/filters.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row header-block" style="background-image: url(../images/skeleton-whale.png);">
+                <div class="header-background" style="background-color: rgba(12, 90, 81, 0.7);">
+                </div>
+                <div class="col-12 header-block-top inner-container">
+                    <div class="d-flex align-items-center">
+                        <div class="col">
+                            <div class="top-logo float-left">
+                                <img src="../images/mgt_logo.jpg" class="img-fluid">
+                            </div>
+                            <div class="top-logo float-left">
+                                <img src="../images/dk_logo2.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-end align-items-center">
+                            <div class="top-menu top-menu-block d-flex justify-content-center align-items-center">
+                                <div class="top-menu-item">
+                                    <a href="#" class="text-pinkish-grey">Новости</a>
+                                </div>
+                                <div class="top-menu-item">
+                                    <a href="#" class="text-pinkish-grey">Музеи</a>
+                                </div>
+                                <div class="top-menu-item">
+                                    <a href="#" class="text-pinkish-grey">Мероприятия</a>
+                                </div>
+                                <div class="top-menu-item">
+                                    <a href="#" class="text-pinkish-grey">Контакты</a>
+                                </div>
+                            </div>
+                            <div class="top-search-link top-menu-block">
+                                <a href="#">
+                                    <img src="holder.js/16x16" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="top-menu-link top-menu-block">
+                                <a href="#">
+                                    <img src="holder.js/19x15" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 align-items-center header-block-content inner-container text-center">
+                    <div class="col-6 m-auto">
+                        <div class="header-content-title text-white">
+                            <h1>Музеи</h1>
+                        </div>
+                        <div class="header-content text-white border-top border-white pt-10">
+                            <span>Музеи — это уникальная возможность узнать историю и приобщиться к великим сокровищам.</span>
+                        </div>
+                    </div>
+                    <!--<div class="header-content-title text-white">
+                        <h1>Мероприятия</h1>
+                    </div>
+                    <hr class="header-content-delimiter">
+                    <div class="header-content text-white">
+                        <span>Музеи — это уникальная возможность узнать историю <br>и приобщиться к великим сокровищам.</span>
+                    </div>-->
+                </div>
+            </div>
+        </header>
+        <main class="main-page">
+            <div class="inner-container">
+
+
+                <div class="block-title mt-40">
+                    <h3 class="mb-25 d-flex align-items-center">
+                        <img src="holder.js/16x16">
+                        <span>Найдено</span>
+                        <div class="bg-warm-grey" style="border-radius: 4px; width: 5px; height: 5px; margin: 0 10px;"></div>
+                        <span class="text-warm-grey"><strong>20</strong></span>
+                    </h3>
+                </div>
+
+                <div class=" mb-30 d-flex justify-content-between align-items-end">
+                    <div class="filter-selectors d-flex">
+                        <div class="selector-box">
+                            <p class="selector-title text-warm-grey fs-13">Музей</p>
+                            <select class="filter-selector" name="museum">
+                                <option value="all">Все музеи</option>
+                                <option value="first">Пушкинский музей</option>
+                                <option value="second">Третьяковская галерея</option>
+                                <option value="third">Исторический музей</option>
+                                <option value="fourth">Палеонтологический музей</option>
+                                <option value="fifth">Музей космонавтики</option>
+                            </select>
+                        </div>
+                        <div class="selector-box">
+                            <p class="selector-title text-warm-grey fs-13">Площадка</p>
+                            <select class="filter-selector" name="museum">
+                                <option value="all">Все площадки</option>
+                                <option value="first">Пушкинский музей</option>
+                                <option value="second">Третьяковская галерея</option>
+                                <option value="third">Исторический музей</option>
+                                <option value="fourth">Палеонтологический музей</option>
+                                <option value="fifth">Музей космонавтики</option>
+                            </select>
+                        </div>
+                        <div class="selector-box">
+                            <p class="selector-title text-warm-grey fs-13">Тип музея</p>
+                            <select class="filter-selector" name="museum">
+                                <option value="all">Все площадки</option>
+                                <option value="first">Пушкинский музей</option>
+                                <option value="second">Третьяковская галерея</option>
+                                <option value="third">Исторический музей</option>
+                                <option value="fourth">Палеонтологический музей</option>
+                                <option value="fifth">Музей космонавтики</option>
+                            </select>
+                        </div>
+                        <div class="selector-box">
+                            <p class="selector-title text-warm-grey fs-13">Метро</p>
+                            <select class="filter-selector" name="museum">
+                                <option value="all">Все станции</option>
+                                <option value="first">Пушкинский музей</option>
+                                <option value="second">Третьяковская галерея</option>
+                                <option value="third">Исторический музей</option>
+                                <option value="fourth">Палеонтологический музей</option>
+                                <option value="fifth">Музей космонавтики</option>
+                            </select>
+                        </div>
+                        <div class="selector-box">
+                            <p class="selector-title text-warm-grey fs-13">Льготы</p>
+                            <select class="filter-selector" name="museum">
+                                <option value="all">Все варианты</option>
+                                <option value="first">Пушкинский музей</option>
+                                <option value="second">Третьяковская галерея</option>
+                                <option value="third">Исторический музей</option>
+                                <option value="fourth">Палеонтологический музей</option>
+                                <option value="fifth">Музей космонавтики</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-outline-orange clear-filters">Очистить фильтры</a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="events-block d-flex justify-content-between align-items-start">
+
+                    <div class="filter-tags-container col-10 pl-0 d-flex align-items-center flex-wrap mb-30">
+                        <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
+                            <span>Московский музей современного искусства</span>
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </a>
+                        <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
+                            <span>Музей-мастерская Зураба Церетели</span>
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </a>
+                        <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
+                            <span>01.02.2019–20.02.2019</span>
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </a>
+                        <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
+                            <span>Краснопресненская</span>
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </a>
+                        <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
+                            <span>Дети-инвалиды</span>
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="col d-flex justify-content-end mt-10">
+                        <ul class="d-flex flex-nowrap align-items-center nav nav-tabs mb-30" role="tablist">
+                            <li class="item-choose border-pinkish-grey nav-item">
+                                <a href="#show-on-list" class="nav-link active text-pinkish-grey" data-toggle="tab" role="tab">Списком</a>
+                            </li>
+                            <li class="item-choose border-pinkish-grey nav-item">
+                                <a href="#show-on-map" class="nav-link text-pinkish-grey" data-toggle="tab" role="tab">На карте</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="d-flex">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="show-on-list" role="tabpanel">
+                            <div class="museum-filter-block d-flex flex-wrap border-bottom border-black">
+                                <div class="museum-filter-card col-4 pl-0 pb-20 pr-10 mb-10 d-flex">
+                                    <div class="museum-filter-card-container d-flex flex-column">
+                                        <div class="museum-filter-card-header mb-25">
+                                            <img src="../images/tyranosaurus-rex-full-length-1024-512.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="museum-filter-card-content pb-15 mb-20 border-bottom border-warm-grey-18">
+                                            <h3 class="mb-0">Музеи — детям!</h3>
+                                            <p class="fs-12 mb-15 text-steel">Теплый стан</p>
+                                            <p class="fs-15 mb-15 text-black-two">Самый большой в мире музей эволюции. Только здесь можно своими глазами увидеть живую историю Земли — от...</p>
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №1</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №2</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №3</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="museum-filter-card-footer">
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>Мероприятия - 5</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>от 250 ₽</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="museum-filter-card col-4 pl-0 pb-20 pr-10 mb-10 d-flex">
+                                    <div class="museum-filter-card-container d-flex flex-column">
+                                        <div class="museum-filter-card-header mb-25">
+                                            <img src="../images/tyranosaurus-rex-full-length-1024-512.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="museum-filter-card-content pb-15 mb-20 border-bottom border-warm-grey-18">
+                                            <h3 class="mb-0">Музеи — детям!</h3>
+                                            <p class="fs-12 mb-15 text-steel">Теплый стан</p>
+                                            <p class="fs-15 mb-15 text-black-two">Самый большой в мире музей эволюции. Только здесь можно своими глазами увидеть живую историю Земли — от...</p>
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №1</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №2</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №3</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="museum-filter-card-footer">
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>Мероприятия - 5</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>от 250 ₽</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="museum-filter-card col-4 pl-0 pb-20 pr-10 mb-10 d-flex">
+                                    <div class="museum-filter-card-container d-flex flex-column">
+                                        <div class="museum-filter-card-header mb-25">
+                                            <img src="../images/tyranosaurus-rex-full-length-1024-512.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="museum-filter-card-content pb-15 mb-20 border-bottom border-warm-grey-18">
+                                            <h3 class="mb-0">Музеи — детям!</h3>
+                                            <p class="fs-12 mb-15 text-steel">Теплый стан</p>
+                                            <p class="fs-15 mb-15 text-black-two">Самый большой в мире музей эволюции. Только здесь можно своими глазами увидеть живую историю Земли — от...</p>
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №1</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №2</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №3</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="museum-filter-card-footer">
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>Мероприятия - 5</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>от 250 ₽</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="museum-filter-card col-4 pl-0 pb-20 pr-10 mb-10 d-flex">
+                                    <div class="museum-filter-card-container d-flex flex-column">
+                                        <div class="museum-filter-card-header mb-25">
+                                            <img src="../images/tyranosaurus-rex-full-length-1024-512.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="museum-filter-card-content pb-15 mb-20 border-bottom border-warm-grey-18">
+                                            <h3 class="mb-0">Музеи — детям!</h3>
+                                            <p class="fs-12 mb-15 text-steel">Теплый стан</p>
+                                            <p class="fs-15 mb-15 text-black-two">Самый большой в мире музей эволюции. Только здесь можно своими глазами увидеть живую историю Земли — от...</p>
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №1</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №2</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №3</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="museum-filter-card-footer">
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>Мероприятия - 5</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>от 250 ₽</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="museum-filter-card col-4 pl-0 pb-20 pr-10 mb-10 d-flex">
+                                    <div class="museum-filter-card-container d-flex flex-column">
+                                        <div class="museum-filter-card-header mb-25">
+                                            <img src="../images/tyranosaurus-rex-full-length-1024-512.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="museum-filter-card-content pb-15 mb-20 border-bottom border-warm-grey-18">
+                                            <h3 class="mb-0">Музеи — детям!</h3>
+                                            <p class="fs-12 mb-15 text-steel">Теплый стан</p>
+                                            <p class="fs-15 mb-15 text-black-two">Самый большой в мире музей эволюции. Только здесь можно своими глазами увидеть живую историю Земли — от...</p>
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №1</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №2</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №3</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="museum-filter-card-footer">
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>Мероприятия - 5</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>от 250 ₽</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="museum-filter-card col-4 pl-0 pb-20 pr-10 mb-10 d-flex">
+                                    <div class="museum-filter-card-container d-flex flex-column">
+                                        <div class="museum-filter-card-header mb-25">
+                                            <img src="../images/tyranosaurus-rex-full-length-1024-512.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="museum-filter-card-content pb-15 mb-20 border-bottom border-warm-grey-18">
+                                            <h3 class="mb-0">Музеи — детям!</h3>
+                                            <p class="fs-12 mb-15 text-steel">Теплый стан</p>
+                                            <p class="fs-15 mb-15 text-black-two">Самый большой в мире музей эволюции. Только здесь можно своими глазами увидеть живую историю Земли — от...</p>
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №1</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №2</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №3</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="museum-filter-card-footer">
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>Мероприятия - 5</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>от 250 ₽</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="museum-filter-card col-4 pl-0 pb-20 pr-10 mb-10 d-flex">
+                                    <div class="museum-filter-card-container d-flex flex-column">
+                                        <div class="museum-filter-card-header mb-25">
+                                            <img src="../images/tyranosaurus-rex-full-length-1024-512.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="museum-filter-card-content pb-15 mb-20 border-bottom border-warm-grey-18">
+                                            <h3 class="mb-0">Музеи — детям!</h3>
+                                            <p class="fs-12 mb-15 text-steel">Теплый стан</p>
+                                            <p class="fs-15 mb-15 text-black-two">Самый большой в мире музей эволюции. Только здесь можно своими глазами увидеть живую историю Земли — от...</p>
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №1</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №2</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №3</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="museum-filter-card-footer">
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>Мероприятия - 5</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>от 250 ₽</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="museum-filter-card col-4 pl-0 pb-20 pr-10 mb-10 d-flex">
+                                    <div class="museum-filter-card-container d-flex flex-column">
+                                        <div class="museum-filter-card-header mb-25">
+                                            <img src="../images/tyranosaurus-rex-full-length-1024-512.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="museum-filter-card-content pb-15 mb-20 border-bottom border-warm-grey-18">
+                                            <h3 class="mb-0">Музеи — детям!</h3>
+                                            <p class="fs-12 mb-15 text-steel">Теплый стан</p>
+                                            <p class="fs-15 mb-15 text-black-two">Самый большой в мире музей эволюции. Только здесь можно своими глазами увидеть живую историю Земли — от...</p>
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №1</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №2</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №3</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="museum-filter-card-footer">
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>Мероприятия - 5</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>от 250 ₽</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="museum-filter-card col-4 pl-0 pb-20 pr-10 mb-10 d-flex">
+                                    <div class="museum-filter-card-container d-flex flex-column">
+                                        <div class="museum-filter-card-header mb-25">
+                                            <img src="../images/tyranosaurus-rex-full-length-1024-512.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="museum-filter-card-content pb-15 mb-20 border-bottom border-warm-grey-18">
+                                            <h3 class="mb-0">Музеи — детям!</h3>
+                                            <p class="fs-12 mb-15 text-steel">Теплый стан</p>
+                                            <p class="fs-15 mb-15 text-black-two">Самый большой в мире музей эволюции. Только здесь можно своими глазами увидеть живую историю Земли — от...</p>
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №1</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №2</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-13 mb-0"><strong>Площадка №3</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="museum-filter-card-footer">
+                                            <div class="museum-filter-card-places">
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>Мероприятия - 5</strong></p>
+                                                </div>
+                                                <div class="museum-filter-card-info d-flex">
+                                                    <img src="holder.js/8x11" class="img-fluid">
+                                                    <p class="fs-12 mb-0"><strong>от 250 ₽</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-center mt-30 mb-0">
+                                    <!--<li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                    </li>-->
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item">...</li>
+                                    <li class="page-item"><a class="page-link" href="#">15</a></li>
+                                    <!--<li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>-->
+                                </ul>
+                            </nav>
+
+                        </div>
+                        <div class="tab-pane fade" id="show-on-map" role="tabpanel">
+                            <div class="event-filter-block d-flex flex-wrap">
+                                <h3>Карта</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-40">
+                <div class="row subscription bg-dark-indigo">
+                    <div class="inner-inner-container">
+                        <div class="row align-items-end">
+                            <div class="col subscription-text">
+                                <div class="media">
+                                    <img src="holder.js/20x21">
+                                    <div class="media-body">
+                                        <h2 class="subscription-title text-dark-peach text-uppercase">
+                                            Подписаться на рассылку
+                                        </h2>
+                                        <span class="text-dark-peach">
+                                            Присылаем раз в неделю в мессенджер или на почту подборку мероприятий по выбранным критериям. Подпишитесь, чтобы быть в курсе эксклюзивных событий для москвичей
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col subscription-form pl-30">
+                                <form action="">
+                                    <div class="form-inline">
+                                        <input type="email" class="form-control" id="subscription-email" placeholder="Ваш e-mail">
+                                        <button type="submit" class="btn btn-md btn-outline-orange text-white">
+                                            Подписаться
+                                        </button>
+                                    </div>
+                                    <div class="custom-control custom-checkbox text-dark-peach">
+                                        <input type="checkbox" class="custom-control-input" id="agreement">
+                                        <label class="custom-control-label orange" for="agreement">
+                                            Я согласен на обработку моих персональных данных
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="mt-45">
+                    <div class="recommend">
+                        <div class="block-title">
+                            <h3 class="mb-25">
+                                <img src="holder.js/16x16">
+                                <span>Рекомендуем посетить</span>
+                            </h3>
+                        </div>
+                        <div class="events-block">
+                            <div class="events-block-content">
+                                <div class="owl-carousel">
+                                    <div class="col">
+                                        <a href="#" class="text-white text-decoration-none">
+                                            <div class="event text-pale-white" style="background: url(../images/event-bg.jpg) no-repeat">
+                                                <div class="event-header">
+                                                    <div class="d-flex justify-content-center align-items-center position-relative text-white">
+                                                        <div class="event-title text-center">
+                                                            Сегодня
+                                                        </div>
+                                                        <div class="event-age d-flex justify-content-center align-items-center">
+                                                            <span>8+</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event-content">
+                                                    <div class="event-content-header">
+                                                        <h3>
+                                                            Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда
+                                                            искусство становится частью ландшафта. Часть III, Москва
+                                                        </h3>
+                                                    </div>
+                                                    <div class="event-content-description">
+                                                        <span>Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого....</span>
+                                                    </div>
+                                                    <div class="event-content-footer">
+                                                        <div class="media">
+                                                            <img src="holder.js/8x11" class="align-self-start mr-2">
+                                                            <div class="media-body">
+                                                                Мультимедиа-арт-музей
+                                                                <br>МоМА на Остоженке
+                                                            </div>
+                                                        </div>
+                                                        <div class="media">
+                                                            <img src="holder.js/11x10" class="align-self-start mr-2">
+                                                            <div class="media-body">
+                                                                от 250 ₽
+                                                                <br>Льготные билеты
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event-footer">
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
+                                                        <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="text-white text-decoration-none">
+                                            <div class="event text-pale-white" style="background: url(../images/event-bg.jpg) no-repeat">
+                                                <div class="event-header">
+                                                    <div class="d-flex justify-content-center align-items-center position-relative text-white">
+                                                        <div class="event-title text-center">
+                                                            Сегодня
+                                                        </div>
+                                                        <div class="event-age d-flex justify-content-center align-items-center">
+                                                            <span>8+</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event-content">
+                                                    <div class="event-content-header">
+                                                        <h3>
+                                                            Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда
+                                                            искусство становится частью ландшафта. Часть III, Москва
+                                                        </h3>
+                                                    </div>
+                                                    <div class="event-content-description">
+                                                        <span>Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого....</span>
+                                                    </div>
+                                                    <div class="event-content-footer">
+                                                        <div class="media">
+                                                            <img src="holder.js/8x11" class="align-self-start mr-2">
+                                                            <div class="media-body">
+                                                                Мультимедиа-арт-музей
+                                                                <br>МоМА на Остоженке
+                                                            </div>
+                                                        </div>
+                                                        <div class="media">
+                                                            <img src="holder.js/11x10" class="align-self-start mr-2">
+                                                            <div class="media-body">
+                                                                от 250 ₽
+                                                                <br>Льготные билеты
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event-footer">
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
+                                                        <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="gray-block-link text-black text-decoration-none">
+                                            <div class="event text-pale-white bg-light-grey block-gray-shadow">
+                                                <div class="event-header event-header-white">
+                                                    <div class="d-flex justify-content-center align-items-center position-relative">
+                                                        <div class="event-title text-center">
+                                                            Сегодня
+                                                        </div>
+                                                        <div class="event-age event-age-black d-flex justify-content-center align-items-center">
+                                                            <span>8+</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event-content">
+                                                    <div class="event-content-header">
+                                                        <h3>
+                                                            Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда
+                                                            искусство становится частью ландшафта. Часть III, Москва
+                                                        </h3>
+                                                    </div>
+                                                    <div class="event-content-description">
+                                                        <span>Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого....</span>
+                                                    </div>
+                                                    <div class="event-content-footer">
+                                                        <div class="media">
+                                                            <img src="holder.js/8x11" class="align-self-start mr-2">
+                                                            <div class="media-body">
+                                                                Мультимедиа-арт-музей
+                                                                <br>МоМА на Остоженке
+                                                            </div>
+                                                        </div>
+                                                        <div class="media">
+                                                            <img src="holder.js/11x10" class="align-self-start mr-2">
+                                                            <div class="media-body">
+                                                                от 250 ₽
+                                                                <br>Льготные билеты
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event-footer">
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
+                                                        <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="gray-block-link text-black text-decoration-none">
+                                            <div class="event text-pale-white bg-light-grey block-gray-shadow">
+                                                <div class="event-header event-header-white">
+                                                    <div class="d-flex justify-content-center align-items-center position-relative">
+                                                        <div class="event-title text-center">
+                                                            Сегодня
+                                                        </div>
+                                                        <div class="event-age event-age-black d-flex justify-content-center align-items-center">
+                                                            <span>8+</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event-content">
+                                                    <div class="event-content-header">
+                                                        <h3>
+                                                            Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда
+                                                            искусство становится частью ландшафта. Часть III, Москва
+                                                        </h3>
+                                                    </div>
+                                                    <div class="event-content-description">
+                                                        <span>Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого....</span>
+                                                    </div>
+                                                    <div class="event-content-footer">
+                                                        <div class="media">
+                                                            <img src="holder.js/8x11" class="align-self-start mr-2">
+                                                            <div class="media-body">
+                                                                Мультимедиа-арт-музей
+                                                                <br>МоМА на Остоженке
+                                                            </div>
+                                                        </div>
+                                                        <div class="media">
+                                                            <img src="holder.js/11x10" class="align-self-start mr-2">
+                                                            <div class="media-body">
+                                                                от 250 ₽
+                                                                <br>Льготные билеты
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event-footer">
+                                                    <div class="d-flex justify-content-center">
+                                                        <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
+                                                        <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="footer row mt-auto py-5 px-3 bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 footer-logo">
+                        <a href="#" class="d-block text-right">
+                            <img src="../images/mgt_square_logo.jpg" class="img-fluid logo">
+                        </a>
+                    </div>
+                    <div class="col-2 footer-column first">
+                        <span class="text-white title">О компании</span>
+                        <ul class="footer-list">
+                            <li><a href="#" class="text-pinkish-grey">Публичный отчет</a></li>
+                            <li><a href="#" class="text-pinkish-grey">Противодействие коррупции</a></li>
+                            <li><a href="#" class="text-pinkish-grey">Сведения об образовательной деятельности</a></li>
+                            <li><a href="#" class="text-pinkish-grey">Вакансии</a></li>
+                            <li><a href="#" class="text-pinkish-grey">Мы в реестре тур операторов</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2 footer-column second">
+                        <span class="text-white title">Спецпроекты</span>
+                        <ul class="footer-list">
+                            <li><a href="#" class="text-pinkish-grey">КИДПРО — конференция детского отдыха</a></li>
+                            <li><a href="#" class="text-pinkish-grey">Инклюзивный отдых</a></li>
+                            <li><a href="#" class="text-pinkish-grey">Музеи — детям</a></li>
+                            <li><a href="#" class="text-pinkish-grey">Карта «Музей в подарок»</a></li>
+                            <li><a href="#" class="text-pinkish-grey">Урок в музее</a></li>
+                            <li><a href="#" class="text-pinkish-grey">Экскурсионный чат-бот по Москве</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2 footer-column third">
+                        <span class="text-white title">Исследования <br>Мосгортура</span>
+                        <ul class="footer-list">
+                            <li><a href="#" class="text-pinkish-grey">Единый рейтинг лагерей</a></li>
+                            <li><a href="#" class="text-pinkish-grey">Московский стандарт детского отдыха</a></li>
+                            <li><a href="#" class="text-pinkish-grey">Музейные исследования</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-column fourth">
+                        <span class="text-white title">Офисы продаж в МФЦ</span>
+                        <ul class="footer-list">
+                            <li><a href="#" class="text-pinkish-grey bold">Адреса и телефоны</a></li>
+                            <div class="socials">
+                                <div class="text-pinkish-grey mb-10">
+                                    <span class="uppercase">Мосгортур. </span> Детский отдых
+                                </div>
+                                <div class="social-icons d-flex">
+                                    <a href="#" class="social-icon social-vk border-dark-sky-blue text-dark-sky-blue">
+                                        <i class="fa fa-vk" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="social-icon social-odnoklassniki border-dark-peach text-dark-peach">
+                                        <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="social-icon social-facebook border-dusky-blue text-dusky-blue">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="socials">
+                                <div class="text-pinkish-grey mb-10">
+                                    <span class="uppercase">Мосгортур. </span> Музеи
+                                </div>
+                                <div class="social-icons d-flex">
+                                    <a href="#" class="social-icon social-vk border-dark-sky-blue text-dark-sky-blue">
+                                        <i class="fa fa-vk" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="social-icon social-odnoklassniki border-dark-peach text-dark-peach">
+                                        <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="social-icon social-facebook border-dusky-blue text-dusky-blue">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

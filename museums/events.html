@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/style-adaptive.css" />
+    <link rel="stylesheet" href="../css/select.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <script src="../js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
@@ -25,7 +26,9 @@
 <body>
     <div class="container">
         <header>
-            <div class="row header-block" style="background: url(../images/museum-bg.jpg);">
+            <div class="row header-block" style="background-image: url(../images/spiral-stairs.jpg);">
+                <div class="header-background" style="background-color: rgba(55, 20, 74, 0.7);">
+                </div>
                 <div class="col-12 header-block-top inner-container">
                     <div class="d-flex align-items-center">
                         <div class="col">
@@ -86,51 +89,67 @@
         <main class="main-page">
             <div class="inner-container">
 
-                <div class="filter-selectors mb-20 d-flex">
-                    <div class="selector-box">
-                        <p class="selector-title text-warm-grey fs-13">Музей</p>
-                        <select class="filter-selector" name="museum">
-                            <option value="all">Все музеи</option>
-                            <option value="first">Пушкинский музей</option>
-                            <option value="second">Третьяковская галерея</option>
-                            <option value="third">Исторический музей</option>
-                            <option value="fourth">Палеонтологический музей</option>
-                            <option value="fifth">Музей космонавтики</option>
-                        </select>
+                <div class="block-title">
+                            <h3 class="mb-25 d-flex align-items-center">
+                                <img src="holder.js/16x16">
+                                <span>Найдено</span>
+                                <div class="bg-warm-grey" style="border-radius: 4px; width: 5px; height: 5px; margin: 0 10px;"></div>
+                                <span class="text-warm-grey"><strong>4</strong></span>
+                            </h3>
+                        </div>
+                
+                <div class=" mb-20 d-flex justify-content-between align-items-end">
+                    <div class="filter-selectors d-flex">
+                        <div class="selector-box">
+                            <p class="selector-title text-warm-grey fs-13">Музей</p>
+                            <select class="filter-selector" name="museum">
+                                <option value="all">Все музеи</option>
+                                <option value="first">Пушкинский музей</option>
+                                <option value="second">Третьяковская галерея</option>
+                                <option value="third">Исторический музей</option>
+                                <option value="fourth">Палеонтологический музей</option>
+                                <option value="fifth">Музей космонавтики</option>
+                            </select>
+                        </div>
+                        <div class="selector-box">
+                            <p class="selector-title text-warm-grey fs-13">Площадка</p>
+                            <select class="filter-selector" name="museum">
+                                <option value="all">Все площадки</option>
+                                <option value="first">Пушкинский музей</option>
+                                <option value="second">Третьяковская галерея</option>
+                                <option value="third">Исторический музей</option>
+                                <option value="fourth">Палеонтологический музей</option>
+                                <option value="fifth">Музей космонавтики</option>
+                            </select>
+                        </div>
+                        <div class="selector-box">
+                            <p class="selector-title text-warm-grey fs-13">Метро</p>
+                            <select class="filter-selector" name="museum">
+                                <option value="all">Все станции</option>
+                                <option value="first">Пушкинский музей</option>
+                                <option value="second">Третьяковская галерея</option>
+                                <option value="third">Исторический музей</option>
+                                <option value="fourth">Палеонтологический музей</option>
+                                <option value="fifth">Музей космонавтики</option>
+                            </select>
+                        </div>
+                        <div class="selector-box">
+                            <p class="selector-title text-warm-grey fs-13">Льготы</p>
+                            <select class="filter-selector" name="museum">
+                                <option value="all">Все варианты</option>
+                                <option value="first">Пушкинский музей</option>
+                                <option value="second">Третьяковская галерея</option>
+                                <option value="third">Исторический музей</option>
+                                <option value="fourth">Палеонтологический музей</option>
+                                <option value="fifth">Музей космонавтики</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="selector-box">
-                        <p class="selector-title text-warm-grey fs-13">Площадка</p>
-                        <select class="filter-selector" name="museum">
-                            <option value="all">Все музеи</option>
-                            <option value="first">Пушкинский музей</option>
-                            <option value="second">Третьяковская галерея</option>
-                            <option value="third">Исторический музей</option>
-                            <option value="fourth">Палеонтологический музей</option>
-                            <option value="fifth">Музей космонавтики</option>
-                        </select>
+
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-outline-orange clear-filters">Очистить фильтры</a>
                     </div>
-                    <div class="selector-box">
-                        <p class="selector-title text-warm-grey fs-13">Метро</p>
-                        <select class="filter-selector" name="museum">
-                            <option value="all">Все музеи</option>
-                            <option value="first">Пушкинский музей</option>
-                            <option value="second">Третьяковская галерея</option>
-                            <option value="third">Исторический музей</option>
-                            <option value="fourth">Палеонтологический музей</option>
-                            <option value="fifth">Музей космонавтики</option>
-                        </select>
-                    </div>
-                    <div class="selector-box">
-                        <p class="selector-title text-warm-grey fs-13">Льготы</p>
-                        <select class="filter-selector" name="museum">
-                            <option value="all">Все музеи</option>
-                            <option value="first">Пушкинский музей</option>
-                            <option value="second">Третьяковская галерея</option>
-                            <option value="third">Исторический музей</option>
-                            <option value="fourth">Палеонтологический музей</option>
-                            <option value="fifth">Музей космонавтики</option>
-                        </select>
-                    </div>
+
                 </div>
 
                 <div class="filter-tags-container col-10 pl-0 d-flex align-items-center flex-wrap mb-30">
