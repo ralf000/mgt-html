@@ -158,6 +158,31 @@ hr.header-content-delimiter {
     background-color: #9b9b9b;
 }
 
+.bg-dark-sky-blue {
+    background-color: #4a90e2;
+}
+
+.bg-dark-peach {
+    background-color: #e3775b;
+}
+
+.bg-blueberry {
+    background-color: #654ea3;
+}
+
+.bg-dusky-blue {
+    background-color: #49608d;
+}
+.bg-telegram-blue {
+    background-color: #36AEE2;
+}
+
+.bg-twitter-blue {
+    background-color: #1DA1F3;
+}
+
+
+
 .text-dark {
     color: #1b1e2d;
 }
@@ -190,13 +215,6 @@ hr.header-content-delimiter {
     color: #f7f7f7;
 }
 
-.border-pinkish-grey {
-    border-color: #bfbfbf !important;
-}
-
-.border-black {
-    border-color: #1a1a1a !important;
-}
 
 .bold {
     font-weight: bold;
@@ -270,6 +288,14 @@ hr.header-content-delimiter {
     border-color: #49608d !important;
 }
 
+.border-twitter-blue {
+    border-color: #1DA1F3 !important;
+}
+
+.border-telegram-blue {
+    border-color: #36AEE2 !important;
+}
+
 .border-white-three {
     border-color: #f2f2f2 !important;
 }
@@ -277,14 +303,20 @@ hr.header-content-delimiter {
 .border-warm-grey-18 {
     border-color: rgba(151, 151, 151, 0.18);
 }
+.border-pinkish-grey {
+    border-color: #bfbfbf !important;
+}
 
+.border-black {
+    border-color: #1a1a1a !important;
+}
 
 
 
 
 /*------------Best-materials------------*/
 
-.best-materials .we-are-in-socials {
+.we-are-in-socials {
     max-width: 349px;
     padding: 50px 25px;
     border: 1px solid #eee;
@@ -296,9 +328,7 @@ hr.header-content-delimiter {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-}
-
-.best-materials .social-icon {
+    
     font-size: 28px;
     width: 60px;
     height: 60px;
@@ -309,6 +339,7 @@ hr.header-content-delimiter {
     text-decoration: none;
     color: #fff !important;
 }
+
 
 .social-icon:last-child {
     margin-right: 0;
@@ -330,10 +361,6 @@ hr.header-content-delimiter {
     background-color: #49608d;
 }
 
-.social-twitter:hover {
-    background-color: #49608d;
-}
-
 .social-telegram:hover {
     background-color: #36AEE2;
 }
@@ -342,12 +369,43 @@ hr.header-content-delimiter {
     background-color: #1DA1F3;
 }
 
+.solid-icon.social-vk:hover {
+    color: #4a90e2;
+    background-color: #fff;
+}
+
+.solid-icon.social-odnoklassniki:hover {
+    color: #e3775b !important;
+    background-color: #fff;
+}
+
+.solid-icon.social-instagram:hover {
+    color: #654ea3 !important;
+    background-color: #fff;
+}
+
+.solid-icon.social-facebook:hover {
+    color: #49608d !important;
+    background-color: #fff;
+}
+
+.solid-icon.social-telegram:hover {
+    color: #36AEE2 !important;
+    background-color: #fff;
+}
+
+.solid-icon.social-twitter:hover {
+    color: #1DA1F3 !important;
+    background-color: #fff;
+}
+
 
 
 .news .news-item,
 .search-results .result-item {
     border-bottom: 2px solid #f2f2f2;
     padding: 30px 0;
+    line-height: 1.4;
 }
 
 .news .news-item:last-of-type {
@@ -390,9 +448,16 @@ hr.header-content-delimiter {
     margin-bottom: 20px;
 }
 
-.best-materials .material-card {
-    /*max-width: 49%;*/
+/*.best-materials .material-card {    
     max-width: 349px;
+}*/
+
+.material-card {    
+    max-width: 349px;
+}
+
+.material-card.big-card {    
+    max-width: 100%;
 }
 
 .material-card:hover {
@@ -889,6 +954,18 @@ footer .social-icon {
 
 /*------------/Orange checkbox-------------*/
 
+/*------------Black checkbox-------------*/
+.subscription-form .black.custom-control-label::before {
+    border: solid 1px #1a1a1a;
+}
+
+.subscription-form .black.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: #1a1a1a;
+    background-color: #1a1a1a;
+}
+
+/*------------/Black checkbox-------------*/
+
 .subscription-form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
     top: 1px;
 }
@@ -936,6 +1013,66 @@ footer .social-icon {
     font-size: 13px;
     font-style: italic;
 }
+
+
+
+
+.form-block.subscription-form ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #000;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.form-block.subscription-form :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #000;
+    opacity: 1;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.form-block.subscription-form ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #000;
+    opacity: 1;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.form-block.subscription-form :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.form-block.subscription-form::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #000;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.form-block.subscription-form ::placeholder {
+    /* Most modern browsers support this now. */
+    color: #000;
+    font-size: 13px;
+    font-style: italic;
+}
+.form-block.subscription-form input[type="text"],
+.form-block.subscription-form input[type="email"] {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(25, 25, 25, 0.3);
+    border-radius: 0;
+    padding-left: 0;
+    padding-bottom: 5px;
+}
+
+
+
+
 
 .block-title img {
     position: relative;

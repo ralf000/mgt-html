@@ -48,10 +48,17 @@
     color: #654ea3;
 }
 
-.select2.select2-container--open .select2-selection__arrow {
+.select2.select2-container--open:not(.date-choose) .select2-selection__arrow {
     -ms-transform: rotateX(180deg);    
     -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg);
+}
+
+.date-choose .select2-selection__arrow {
+    transition: none;
+}
+.date-choose.select2-container--open .select2-selection__arrow {
+    padding-top: 0.5px;
 }
 
 .select2-dropdown {

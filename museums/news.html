@@ -12,30 +12,30 @@
     <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/style-adaptive.css" />
-    <link rel="stylesheet" href="../css/slick/slick.css" />
-    <link rel="stylesheet" href="../css/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../css/select.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <script src="../js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
     <script src="../js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
     <script src="../js/holder.min.js" type="text/javascript"></script>
     <script src="../js/site.js" type="text/javascript"></script>
-    <script src="../js/search-panel.js" type="text/javascript"></script>
-    <script src="../js/slick/slick.min.js" type="text/javascript"></script>
-    <script src="../js/gallery.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="../js/filters.js" type="text/javascript"></script>
 </head>
 
 <body>
     <div class="container">
         <header>
-
-            <div class="row header-menu bg-black">
-                <div class="col-12 pt-20 pb-20 inner-container">
+            <div class="row header-block" style="background-image: url(../images/galeria-tretyakov.jpg);">
+                <div class="header-background" style="background-color: rgba(9, 10, 74, 0.7);">
+                </div>
+                <div class="col-12 header-block-top inner-container">
                     <div class="d-flex align-items-center">
-                        <div class="col d-flex">
-                            <div class="top-logo">
+                        <div class="col">
+                            <div class="top-logo float-left">
                                 <img src="../images/mgt_logo.jpg" class="img-fluid">
                             </div>
-                            <div class="top-logo">
+                            <div class="top-logo float-left">
                                 <img src="../images/dk_logo2.png" class="img-fluid">
                             </div>
                         </div>
@@ -67,336 +67,341 @@
                         </div>
                     </div>
                 </div>
-                <div id="search-panel" class="col-12 bg-white-four">
-                    <div class="form-container d-flex pt-20 pb-20">
-                        <form class="input-group">
-                            <input class="form-control bg-white-four" type="search" placeholder="Что ищем?">
-                        </form>
+                <div class="col-12 align-items-center header-block-content inner-container text-center">
+                    <div class="col-6 m-auto">
+                        <div class="header-content-title text-white">
+                            <h1>Новости</h1>
+                        </div>
                     </div>
+                    <!--<div class="header-content-title text-white">
+                        <h1>Мероприятия</h1>
+                    </div>
+                    <hr class="header-content-delimiter">
+                    <div class="header-content text-white">
+                        <span>Музеи — это уникальная возможность узнать историю <br>и приобщиться к великим сокровищам.</span>
+                    </div>-->
                 </div>
             </div>
         </header>
-
         <main class="main-page">
             <div class="inner-container">
 
-                <div class="d-flex mb-30">
-                    <div class="col px-0">
-                        <h1 class="mb-10">Палеонтологический музей</h1>
-                        <p class="text-black fs-14 mb-0">Самый большой в мире музей эволюции. Только здесь можно своими глазами увидеть живую историю Земли — от зарождения жизни до появления человеческой цивилизации.</p>
-                    </div>
-                    <div class="col-5 px-0">
-                        <div class="d-flex justify-content-end">
-                            <a href="#" class="btn btn-long btn-outline-orange">К списку музеев</a>
-                        </div>
-                    </div>
+                <div class="block-title">
+                    <h3 class="mb-25 d-flex align-items-center">
+                        <img src="holder.js/16x16">
+                        <span>Все новости</span>
+                    </h3>
                 </div>
 
-                <div class="col-12 px-0">
-                    <div class="d-flex border-bottom border-warm-grey-18 pb-25">
-                        <div class="d-flex mr-30">
-                            <div style="background-color: #f5a623; border-radius: 4px; width: 7px; height: 7px; margin-top: 5px; margin-right: 10px;"></div>
-                            <div class="d-flex flex-column">
-                                <span>Теплый стан</span>
-                                <span><strong>ул. Профсоюзная, 123</strong></span>
-                            </div>
+                <div class=" mb-20 d-flex justify-content-between align-items-end">
+                    <div class="filter-selectors d-flex">
+                        <div class="selector-box">
+                            <p class="selector-title text-warm-grey fs-13">Даты</p>
+                            <select class="filter-selector date-choose" name="museum">
+                                <option value="all">Все даты</option>
+                                <option value="first">Пушкинский музей</option>
+                                <option value="second">Третьяковская галерея</option>
+                                <option value="third">Исторический музей</option>
+                                <option value="fourth">Палеонтологический музей</option>
+                                <option value="fifth">Музей космонавтики</option>
+                            </select>
                         </div>
-                        <div class="d-flex col-4">
-                            <img src="holder.js/8x8" style="margin-top: 5px; margin-right: 10px;">
-                            <div class="d-flex flex-column">
-                                <span><strong>октябрь-май: ср-вс 10.00–18.00,</strong></span>
-                                <span><strong>июнь-сентябрь: ср-вс 11.00–18.00</strong></span>
-                            </div>
+                        <div class="selector-box">
+                            <p class="selector-title text-warm-grey fs-13">Категории</p>
+                            <select class="filter-selector" name="museum">
+                                <option value="all">Все варианты</option>
+                                <option value="first">Пушкинский музей</option>
+                                <option value="second">Третьяковская галерея</option>
+                                <option value="third">Исторический музей</option>
+                                <option value="fourth">Палеонтологический музей</option>
+                                <option value="fifth">Музей космонавтики</option>
+                            </select>
                         </div>
-                        <div class="d-flex col">
-                            <a href="#" class="text-steel">
-                                <span>На карте </span>
-                                <img src="holder.js/10x5" style="margin-left: 10px;">
+                    </div>
+
+                </div>
+
+                <div class="mt-35">
+                    <div class="d-flex best-materials align-items-start">
+
+                        <div class="best-materials col-8 d-flex flex-wrap justify-content-between align-items-start px-0">
+                            <a href="#" class="material-card d-block flex-shrink-0 mb-20">
+                                <div class="item-image">
+                                    <img src="holder.js/350x200" class="img-fluid">
+                                </div>
+                                <div class="item-info-container pb-20">
+                                    <div class="item-info text-black-two">
+                                        <h3 class="item-info-title mb-20">Современное искусство России 1990-х годов</h3>
+                                        <span class="item-info-text text-black-two d-block mb-30">Направление исследований, сосредоточенное на 1990-х годах как на поворотном пункте в развитии современного искусства по всему миру </span>
+                                    </div>
+                                    <div class="item-date pt-15 fs-12">
+                                        <span class="mb-0">
+                                            <span class="text-dark-peach">01.02.2019</span>
+                                            <span class="text-steel">14:10</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="material-card d-block flex-shrink-0 mb-20">
+                                <div class="item-image">
+                                    <img src="holder.js/350x200" class="img-fluid">
+                                </div>
+                                <div class="item-info-container pb-20">
+                                    <div class="item-info text-black-two">
+                                        <h3 class="item-info-title mb-20">Современное искусство России 1990-х годов</h3>
+                                        <span class="item-info-text text-black-two d-block mb-30">Направление исследований, сосредоточенное на 1990-х годах как на поворотном пункте в развитии современного искусства по всему миру </span>
+                                    </div>
+                                    <div class="item-date pt-15 fs-12">
+                                        <span class="mb-0">
+                                            <span class="text-dark-peach">01.02.2019</span>
+                                            <span class="text-steel">14:10</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="material-card d-block flex-shrink-0 mb-20">
+                                <div class="item-image">
+                                    <img src="holder.js/350x200" class="img-fluid">
+                                </div>
+                                <div class="item-info-container pb-20">
+                                    <div class="item-info text-black-two">
+                                        <h3 class="item-info-title mb-20">Современное искусство России 1990-х годов</h3>
+                                        <span class="item-info-text text-black-two d-block mb-30">Направление исследований, сосредоточенное на 1990-х годах как на поворотном пункте в развитии современного искусства по всему миру </span>
+                                    </div>
+                                    <div class="item-date pt-15 fs-12">
+                                        <span class="mb-0">
+                                            <span class="text-dark-peach">01.02.2019</span>
+                                            <span class="text-steel">14:10</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="material-card d-block flex-shrink-0 mb-20">
+                                <div class="item-image">
+                                    <img src="holder.js/350x200" class="img-fluid">
+                                </div>
+                                <div class="item-info-container pb-20">
+                                    <div class="item-info text-black-two">
+                                        <h3 class="item-info-title mb-20">Современное искусство России 1990-х годов</h3>
+                                        <span class="item-info-text text-black-two d-block mb-30">Направление исследований, сосредоточенное на 1990-х годах как на поворотном пункте в развитии современного искусства по всему миру </span>
+                                    </div>
+                                    <div class="item-date pt-15 fs-12">
+                                        <span class="mb-0">
+                                            <span class="text-dark-peach">01.02.2019</span>
+                                            <span class="text-steel">14:10</span>
+                                        </span>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                    </div>
-                </div>
+                        <div class="col-4 d-flex flex-column pr-0">
+                            <div class="news">
+                                <a href="#" class="news-item d-flex pt-0">
+                                    <div class="date">
+                                        <span class="text-dark-peach mb-0">01.02.2019</span>
+                                        <span class="text-steel">14:10</span>
+                                    </div>
+                                    <div class="news-info">
+                                        <span class="text-black">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="news-item d-flex">
+                                    <div class="date">
+                                        <span class="text-dark-peach mb-0">01.02.2019</span>
+                                        <span class="text-steel">14:10</span>
+                                    </div>
+                                    <div class="news-info">
+                                        <span class="text-black">Многоуважаемый сервант и деревенский Пушкин. Шесть выставок, которые скоро закончатся </span>
+                                    </div>
+                                </a>
+                                <a href="#" class="news-item d-flex">
+                                    <div class="date">
+                                        <span class="text-dark-peach mb-0">01.02.2019</span>
+                                        <span class="text-steel">14:10</span>
+                                    </div>
+                                    <div class="news-info">
+                                        <span class="text-black">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="news-item d-flex">
+                                    <div class="date">
+                                        <span class="text-dark-peach mb-0">01.02.2019</span>
+                                        <span class="text-steel">14:10</span>
+                                    </div>
+                                    <div class="news-info">
+                                        <span class="text-black">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="news-item d-flex">
+                                    <div class="date">
+                                        <span class="text-dark-peach mb-0">01.02.2019</span>
+                                        <span class="text-steel">14:10</span>
+                                    </div>
+                                    <div class="news-info">
+                                        <span class="text-black">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="news-item d-flex">
+                                    <div class="date">
+                                        <span class="text-dark-peach mb-0">01.02.2019</span>
+                                        <span class="text-steel">14:10</span>
+                                    </div>
+                                    <div class="news-info">
+                                        <span class="text-black">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="news-item d-flex">
+                                    <div class="date">
+                                        <span class="text-dark-peach mb-0">01.02.2019</span>
+                                        <span class="text-steel">14:10</span>
+                                    </div>
+                                    <div class="news-info">
+                                        <span class="text-black">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="news-item d-flex">
+                                    <div class="date">
+                                        <span class="text-dark-peach mb-0">01.02.2019</span>
+                                        <span class="text-steel">14:10</span>
+                                    </div>
+                                    <div class="news-info">
+                                        <span class="text-black">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</span>
+                                    </div>
+                                </a>
 
-                <div class="information col-10 px-0 pt-40">
-                    <p class="fs-16 mb-35 text-black">История этого музея началась ещё во времена Петра Первого. Останки доисторических млекопитающих, которые собрал любознательный царь, хранятся здесь до сих пор. Из Кунсткамеры коллекция переехала в Минеральный кабинет Академии наук, где продолжала постоянно пополняться новыми экспонатами. В результате в 1925 году возник «предок» современного Палеонтологического музея — Геологический. </p>
-                    <p class="fs-16 mb-35 text-black">Реорганизовать его было решено ещё в конце 1930-х. С этой целью был разработан проект нового музея, но осуществить его помешала Вторая мировая война. Большинство экспонатов были в первые же дни эвакуированы в район Алма-Аты. Уже после войны были выделены необходимые средства, и в результате двадцатилетнего труда учёных и архитекторов появился современный Палеонтологический музей. Первые гости побывали в этих стенах в 1987 году, и с тех пор музей всегда полон посетителей. </p>
-
-                </div>
-
-                <div class="d-flex align-items-start">
-                    <div class="col-10 px-0">
-                        <div class="gallery-container" style="background-color: #000; padding: 60px;">
-                            <div class="gallery mb-35">
-                                <div class="gallery-item">
-                                    <img src="../images/museum-1.jpg" class="img-fluid m-auto">
-                                </div>
-                                <div class="gallery-item">
-                                    <img src="../images/museum-2.jpg" class="img-fluid m-auto">
-                                </div>
-                                <div class="gallery-item">
-                                    <img src="../images/museum-3.jpg" class="img-fluid m-auto">
-                                </div>
-                                <div class="gallery-item">
-                                    <img src="../images/museum-4.jpg" class="img-fluid m-auto">
-                                </div>
-                                <div class="gallery-item">
-                                    <img src="../images/museum-5.jpg" class="img-fluid m-auto">
-                                </div>
-                                <div class="gallery-item">
-                                    <img src="../images/museum-6.jpg" class="img-fluid m-auto">
-                                </div>
-                            </div>
-                            <div class="gallery-nav">
-                                <div class="gallery-nav-item">
-                                    <img src="../images/museum-1.jpg" class="img-fluid">
-                                </div>
-                                <div class="gallery-nav-item">
-                                    <img src="../images/museum-2.jpg" class="img-fluid">
-                                </div>
-                                <div class="gallery-nav-item">
-                                    <img src="../images/museum-3.jpg" class="img-fluid">
-                                </div>
-                                <div class="gallery-nav-item">
-                                    <img src="../images/museum-4.jpg" class="img-fluid">
-                                </div>
-                                <div class="gallery-nav-item">
-                                    <img src="../images/museum-5.jpg" class="img-fluid">
-                                </div>
-                                <div class="gallery-nav-item">
-                                    <img src="../images/museum-6.jpg" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Slider Buttons -->
-                    <div class="btn-slider-gallery d-flex justify-content-center align-items-center border border-dark-peach rounded ml-25">
-                        <a href="#" id="gallery-previous-arrow" class="text-dark-peach fs-20 text-right flex-grow-1">
-                            <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        </a>
-                        <div style="width: 2px; height: 15px; background-color: #979797;"></div>
-                        <a href="#" id="gallery-next-arrow" class="text-dark-peach fs-20 text-left flex-grow-1">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="mt-45">
-                    <div class="current-events">
-                        <div class="block-title">
-                            <h3 class="mb-25 d-flex align-items-center">
-                                <img src="holder.js/16x16">
-                                <span>Текущие мероприятия</span>
-                                <div class="bg-warm-grey" style="border-radius: 4px; width: 5px; height: 5px; margin: 0 10px;"></div>
-                                <span class="text-warm-grey"><strong>4</strong></span>
-                            </h3>
-                        </div>
-                        <div class="events-block">
-                            <div class="events-block-content d-flex flex-wrap">
-                                <div class="col-4 pl-0 pr-10 mb-10 d-flex">
-                                    <a href="#" class="text-white text-decoration-none">
-                                        <div class="event text-pale-white" style="background: url(../images/event-bg.jpg) no-repeat">
-                                            <div class="event-header">
-                                                <div class="d-flex justify-content-center align-items-center position-relative text-white">
-                                                    <div class="event-title text-center">
-                                                        Сегодня
-                                                    </div>
-                                                    <div class="event-age d-flex justify-content-center align-items-center">
-                                                        <span>8+</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-content-header">
-                                                    <h3>
-                                                        Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда
-                                                        искусство становится частью ландшафта. Часть III, Москва
-                                                    </h3>
-                                                </div>
-                                                <div class="event-content-description">
-                                                    <span>Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого....</span>
-                                                </div>
-                                                <div class="event-content-footer">
-                                                    <div class="media">
-                                                        <img src="holder.js/8x11" class="align-self-start mr-2">
-                                                        <div class="media-body">
-                                                            Мультимедиа-арт-музей
-                                                            <br>МоМА на Остоженке
-                                                        </div>
-                                                    </div>
-                                                    <div class="media">
-                                                        <img src="holder.js/11x10" class="align-self-start mr-2">
-                                                        <div class="media-body">
-                                                            от 250 ₽
-                                                            <br>Льготные билеты
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="event-footer">
-                                                <div class="d-flex justify-content-center">
-                                                    <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
-                                                    <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-4 pl-0 pr-10 mb-10 d-flex">
-                                    <a href="#" class="text-white text-decoration-none">
-                                        <div class="event text-pale-white" style="background: url(../images/event-bg.jpg) no-repeat">
-                                            <div class="event-header">
-                                                <div class="d-flex justify-content-center align-items-center position-relative text-white">
-                                                    <div class="event-title text-center">
-                                                        Сегодня
-                                                    </div>
-                                                    <div class="event-age d-flex justify-content-center align-items-center">
-                                                        <span>8+</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-content-header">
-                                                    <h3>
-                                                        Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда
-                                                        искусство становится частью ландшафта. Часть III, Москва
-                                                    </h3>
-                                                </div>
-                                                <div class="event-content-description">
-                                                    <span>Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого....</span>
-                                                </div>
-                                                <div class="event-content-footer">
-                                                    <div class="media">
-                                                        <img src="holder.js/8x11" class="align-self-start mr-2">
-                                                        <div class="media-body">
-                                                            Мультимедиа-арт-музей
-                                                            <br>МоМА на Остоженке
-                                                        </div>
-                                                    </div>
-                                                    <div class="media">
-                                                        <img src="holder.js/11x10" class="align-self-start mr-2">
-                                                        <div class="media-body">
-                                                            от 250 ₽
-                                                            <br>Льготные билеты
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="event-footer">
-                                                <div class="d-flex justify-content-center">
-                                                    <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
-                                                    <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-4 pl-0 pr-10 mb-10 d-flex">
-                                    <a href="#" class="text-white text-decoration-none">
-                                        <div class="event text-pale-white" style="background: url(../images/event-bg.jpg) no-repeat">
-                                            <div class="event-header">
-                                                <div class="d-flex justify-content-center align-items-center position-relative text-white">
-                                                    <div class="event-title text-center">
-                                                        Сегодня
-                                                    </div>
-                                                    <div class="event-age d-flex justify-content-center align-items-center">
-                                                        <span>8+</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-content-header">
-                                                    <h3>
-                                                        Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда
-                                                        искусство становится частью ландшафта. Часть III, Москва
-                                                    </h3>
-                                                </div>
-                                                <div class="event-content-description">
-                                                    <span>Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого....</span>
-                                                </div>
-                                                <div class="event-content-footer">
-                                                    <div class="media">
-                                                        <img src="holder.js/8x11" class="align-self-start mr-2">
-                                                        <div class="media-body">
-                                                            Мультимедиа-арт-музей
-                                                            <br>МоМА на Остоженке
-                                                        </div>
-                                                    </div>
-                                                    <div class="media">
-                                                        <img src="holder.js/11x10" class="align-self-start mr-2">
-                                                        <div class="media-body">
-                                                            от 250 ₽
-                                                            <br>Льготные билеты
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="event-footer">
-                                                <div class="d-flex justify-content-center">
-                                                    <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
-                                                    <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-4 pl-0 pr-10 mb-10 d-flex">
-                                    <a href="#" class="text-white text-decoration-none">
-                                        <div class="event text-pale-white" style="background: url(../images/event-bg.jpg) no-repeat">
-                                            <div class="event-header">
-                                                <div class="d-flex justify-content-center align-items-center position-relative text-white">
-                                                    <div class="event-title text-center">
-                                                        Сегодня
-                                                    </div>
-                                                    <div class="event-age d-flex justify-content-center align-items-center">
-                                                        <span>8+</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-content-header">
-                                                    <h3>
-                                                        Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда
-                                                        искусство становится частью ландшафта. Часть III, Москва
-                                                    </h3>
-                                                </div>
-                                                <div class="event-content-description">
-                                                    <span>Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого....</span>
-                                                </div>
-                                                <div class="event-content-footer">
-                                                    <div class="media">
-                                                        <img src="holder.js/8x11" class="align-self-start mr-2">
-                                                        <div class="media-body">
-                                                            Мультимедиа-арт-музей
-                                                            <br>МоМА на Остоженке
-                                                        </div>
-                                                    </div>
-                                                    <div class="media">
-                                                        <img src="holder.js/11x10" class="align-self-start mr-2">
-                                                        <div class="media-body">
-                                                            от 250 ₽
-                                                            <br>Льготные билеты
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="event-footer">
-                                                <div class="d-flex justify-content-center">
-                                                    <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
-                                                    <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="mt-45">
+                <div class="museum-banner-block mt-10 d-flex">
+                    <div class="museum-banner">
+                        <div class="museum-banner-background" style="background-image: url('../images/skeleton-whale.png')">
+                            <div class="bg-transparent-dark"></div>
+                        </div>
+                        <div class="museum-banner-container">
+                            <div class="museum-banner-header">
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-orange">Спецпроект</a>
+                                </div>
+                            </div>
+                            <div class="museum-banner-content d-flex flex-column align-items-center justify-content-center h-100">
+                                <h1 class="museum-banner-title text-white-four mb-0">Название спецпроекта</h1>
+                                <img src="../images/wave-line-min.png" class="img-fluid" style="margin: 12px 0;">
+                                <div class="museum-banner-text text-white-four text-center fs-12">
+                                    <p class="mb-0">Наша миссия — помочь москвичам и туристам
+                                        лучше понять музеи и сделать их посещение частью повседневной жизни, неотъемлемой
+                                        культурной частью семьи.</p>
+                                </div>
+                                <div class="map-and-price d-flex justify-content-center text-white-four fs-12 mt-10">
+                                    <span class="mr-15">
+                                        <img src="holder.js/8x11">
+                                        <span>Мультимедиа-арт-музей</span>
+                                    </span>
+                                    <span>
+                                        <img src="holder.js/11x10">
+                                        <span>от 250 ₽</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-start mt-30 pb-40 border-bottom border-black">
+                    <a href="#" class="material-card d-block flex-shrink-0 mb-20 mr-10">
+                        <div class="item-image">
+                            <img src="holder.js/350x200" class="img-fluid">
+                        </div>
+                        <div class="item-info-container pb-20">
+                            <div class="item-info text-black-two">
+                                <h3 class="item-info-title mb-20">Современное искусство России 1990-х годов</h3>
+                                <span class="item-info-text text-black-two d-block mb-30">Направление исследований, сосредоточенное на 1990-х годах как на поворотном пункте в развитии современного искусства по всему миру </span>
+                            </div>
+                            <div class="item-date pt-15 fs-12">
+                                <span class="mb-0">
+                                    <span class="text-dark-peach">01.02.2019</span>
+                                    <span class="text-steel">14:10</span>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="material-card big-card d-flex mb-20">
+                        <div class="item-image flex-shrink-0">
+                            <img src="holder.js/350x435" class="img-fluid">
+                        </div>
+                        <div class="item-info-container d-flex flex-column pt-60 pb-20">
+                            <div class="item-info text-black-two">
+                                <h3 class="item-info-title mb-20">Современное искусство России 1990-х годов</h3>
+                                <span class="item-info-text text-black-two d-block mb-30">Направление исследований, сосредоточенное на 1990-х годах как на поворотном пункте в развитии современного искусства по всему миру </span>
+                            </div>
+                            <div class="item-footer d-flex align-items-end h-100">
+                                <div class="item-date pt-15 fs-12 w-100">
+                                    <span class="mb-0">
+                                        <span class="text-dark-peach">01.02.2019</span>
+                                        <span class="text-steel">14:10</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center mt-30 mb-0">
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">...</li>
+                        <li class="page-item"><a class="page-link" href="#">15</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="mt-40">
+                <div class="row subscription bg-dark-indigo">
+                    <div class="inner-inner-container">
+                        <div class="row align-items-end">
+                            <div class="col subscription-text">
+                                <div class="media">
+                                    <img src="holder.js/20x21">
+                                    <div class="media-body">
+                                        <h2 class="subscription-title text-dark-peach text-uppercase">
+                                            Подписаться на рассылку
+                                        </h2>
+                                        <span class="text-dark-peach">
+                                            Присылаем раз в неделю в мессенджер или на почту подборку мероприятий по выбранным критериям. Подпишитесь, чтобы быть в курсе эксклюзивных событий для москвичей
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col subscription-form pl-30">
+                                <form action="">
+                                    <div class="form-inline">
+                                        <input type="email" class="form-control" id="subscription-email" placeholder="Ваш e-mail">
+                                        <button type="submit" class="btn btn-md btn-outline-orange text-white">
+                                            Подписаться
+                                        </button>
+                                    </div>
+                                    <div class="custom-control custom-checkbox text-dark-peach">
+                                        <input type="checkbox" class="custom-control-input" id="agreement">
+                                        <label class="custom-control-label orange" for="agreement">
+                                            Я согласен на обработку моих персональных данных
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="mt-40">
                     <div class="recommend">
                         <div class="block-title">
                             <h3 class="mb-25">
@@ -546,11 +551,11 @@
                                                     </div>
                                                 </div>
                                                 <div class="event-footer">
-                                                    <div class="d-flex justify-content-center">
-                                                        <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
-                                                        <a href="#" class="btn btn-sm btn-grey">Спецпроект</a>
-                                                    </div>
+                                                <div class="d-flex justify-content-center mb-5">
+                                                    <a href="#" class="btn btn-sm btn-orange-rounded">Искусство</a>
+                                                    <a href="#" class="btn btn-sm btn-orange-rounded">Культура</a>
                                                 </div>
+                                            </div>
                                             </div>
                                         </a>
                                     </div>
@@ -608,9 +613,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </main>
         <!-- Footer -->
         <footer class="footer row mt-auto py-5 px-3 bg-black">
