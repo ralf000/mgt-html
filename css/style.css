@@ -470,18 +470,18 @@ hr.header-content-delimiter {
 .material-card {
     border-radius: 6px;
     box-shadow: 0 2px 2px 0 rgba(151, 151, 151, 0.41);
-    margin-bottom: 20px;
-}
-
-/*.best-materials .material-card {    
-    max-width: 349px;
-}*/
-
-.material-card {    
     max-width: 349px;
 }
 
-.material-card.big-card {    
+.best-materials.museum-index-materials .material-card .item-info-container {
+    padding: 17px 19px 21px;
+}
+
+.best-materials {
+    margin: 10px 0;
+}
+
+.material-card.big-card {
     max-width: 100%;
 }
 
@@ -519,7 +519,6 @@ hr.header-content-delimiter {
     min-height: 500px;
     /*overflow: hidden;*/
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 
@@ -999,7 +998,6 @@ footer .social-icon {
 }
 
 .events-block-footer {
-    margin-top: 30px;
 }
 
 .subscription {
@@ -1374,4 +1372,3 @@ button:focus {
 .museum-filter-card a {
     color: inherit;
 }
-
