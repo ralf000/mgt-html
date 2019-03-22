@@ -44,6 +44,14 @@ h4 {
     border-radius: 6px
 }
 
+.btn-10-40 {
+    padding: 10px 40px
+}
+
+.btn-7-45 {
+    padding: 7px 45px;
+}
+
 a.text-pinkish-grey:hover {
     color: #2b2b2b !important;
 }
@@ -1282,8 +1290,8 @@ button:focus {
 }
 
 .main-page {
-    margin-top: 60px;
-    margin-bottom: 40px;
+    /*margin-top: 60px;*/
+    /*margin-bottom: 40px;*/
 }
 
 
@@ -1378,4 +1386,17 @@ button:focus {
 
 .museum-filter-card a {
     color: inherit;
+}
+
+.circle-sm {
+    border-radius: 4px;
+    width: 7px;
+    height: 7px;
+    margin-right: 10px;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+.select2 .select2-selection--single .select2-selection__arrow {
+    color: #4a90e2 !important;
 }
