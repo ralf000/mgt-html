@@ -3,6 +3,7 @@
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.1px;
+    border-radius: 3px;
 }
 
 .btn-sm {
@@ -11,7 +12,7 @@
 }
 
 .btn-long {
-    padding: 7px 20px !important;
+    padding: 7px 23px 4px !important;
 }
 
 .btn.focus, .btn:focus {

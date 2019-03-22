@@ -77,6 +77,10 @@ a.text-pinkish-grey:hover {
     background-size: cover;
 }
 
+.header-block-small {
+    min-height: 80px;
+}
+
 .header-block .header-background {
     position: absolute; 
     height: 100%; 
@@ -334,7 +338,7 @@ hr.header-content-delimiter {
 }
 
 .border-warm-grey-18 {
-    border-color: rgba(151, 151, 151, 0.18);
+    border-color: rgba(151, 151, 151, 0.18) !important;
 }
 .border-pinkish-grey {
     border-color: #bfbfbf !important;
@@ -1036,7 +1040,7 @@ footer .social-icon {
     border-radius: 0;
     padding-left: 0;
     padding-bottom: 5px;
-    width: 63% !important;
+    width: 63%;
 }
 
 .subscription-form [type="submit"] {
@@ -1399,4 +1403,39 @@ button:focus {
 
 .select2 .select2-selection--single .select2-selection__arrow {
     color: #4a90e2 !important;
+}
+
+.news-article h1 {
+    margin-bottom: 5px;
+}
+
+.news-article-text {
+    line-height: 1.5;
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+.news-article-text h3 {
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.news-article-text p {
+    margin-bottom: 25px;
+}
+
+.news-article-text img {
+    margin-bottom: 30px;
+}
+
+.news-article-text blockquote {
+    margin: 50px 0;
+    padding: 55px 6.5rem;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 24px;
+    border-bottom: 1px solid #1a1a1a;
+    border-top: 1px solid #1a1a1a;
+    font-family: "Intro";
+    font-weight: 500;
 }
