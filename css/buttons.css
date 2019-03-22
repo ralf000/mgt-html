@@ -12,7 +12,8 @@
 }
 
 .btn-long {
-    padding: 7px 23px 4px !important;
+    padding: 7px 17px 4px !important;
+    min-width: 82px;
 }
 
 .btn.focus, .btn:focus {

@@ -449,11 +449,6 @@ hr.header-content-delimiter {
     border-bottom: none;
 }
 
-/*.news .news-item:hover,
-.search-results .result-item:hover {
-    text-decoration: none;
-}*/
-
 .news .news-item .date,
 .search-results .result-item .date {
     font-size: 12px;
@@ -1405,30 +1400,30 @@ button:focus {
     color: #4a90e2 !important;
 }
 
-.news-article h1 {
+.text-article h1 {
     margin-bottom: 5px;
 }
 
-.news-article-text {
+.text-article-text {
     line-height: 1.5;
     color: #1a1a1a;
     font-size: 16px;
 }
 
-.news-article-text h3 {
+.text-article-text h3 {
     font-size: 16px;
     margin-top: 40px;
 }
 
-.news-article-text p {
+.text-article-text p {
     margin-bottom: 25px;
 }
 
-.news-article-text img {
+.text-article-text img {
     margin-bottom: 30px;
 }
 
-.news-article-text blockquote {
+.text-article-text blockquote {
     margin: 50px 0;
     padding: 55px 6.5rem;
     text-align: center;
