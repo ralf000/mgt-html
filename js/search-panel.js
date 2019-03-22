@@ -6,12 +6,12 @@ $(function () {
     function slideToggleSearch(){
         if(isSearchHidden) {
             isSearchHidden = false;
-            $("header .top-search-link a").find("img").attr("src","../images/search-icon-close.png");
+            $("header .top-search-link a").find("img").attr("src","../images/search-icon-close1.png");
             $("#search-panel").slideDown();
         }
         else {
             isSearchHidden = true;
-            $("header .top-search-link a").find("img").attr("src","../images/search-icon.png");
+            $("header .top-search-link a").find("img").attr("src","../images/icons/icon_search.png");
             $("#search-panel").slideUp();
         }
     };

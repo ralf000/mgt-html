@@ -471,6 +471,7 @@ hr.header-content-delimiter {
     border-radius: 6px;
     box-shadow: 0 2px 2px 0 rgba(151, 151, 151, 0.41);
     max-width: 349px;
+    overflow: hidden;
 }
 
 .best-materials.museum-index-materials .material-card .item-info-container {
@@ -492,6 +493,12 @@ hr.header-content-delimiter {
 
 .material-card .item-image {
     text-align: center;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.material-card.big-card .item-image {
+    max-height: 100%;
 }
 
 .material-card .item-info-container {
