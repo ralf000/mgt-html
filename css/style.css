@@ -63,6 +63,10 @@ a.text-pinkish-grey:hover {
     max-width: 1067px;
 }
 
+.header-container {
+    max-width: 1080px;
+}
+
 .inner-inner-container {
     width: 100%;
     margin-right: auto;
@@ -88,7 +92,9 @@ a.text-pinkish-grey:hover {
 }
 
 .header-block-top {
-    padding: 20px 0 20px 7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*padding: 20px 0 20px 7px;*/
     height: 40px;
 }
 
@@ -535,6 +541,10 @@ hr.header-content-delimiter {
     border-radius: 5px;
 }
 
+.museum-card:last-of-type {
+    padding-right: 0 !important;
+}
+
 
 .museum-card-background {
     position: absolute;
@@ -718,12 +728,21 @@ hr.header-content-delimiter {
 
 /*------------Footer------------*/
 
+footer {
+    background-color: #1a1a1a;
+    padding: 42px 0;
+}
+
+footer .footer-container {
+    width: 1200px;
+}
+
 footer .footer-logo {
     margin-right: 30px;
 }
 
 footer .logo {
-    max-width: 65px;
+    max-width: 63px;
 }
 
 footer .footer-column.first {
@@ -731,17 +750,16 @@ footer .footer-column.first {
 }
 
 footer .footer-column.second {
-    margin-left: -15px;
-    padding-right: 55px;
+    margin-left: -19px;
+    padding-right: 50px;
 }
 
 footer .footer-column.third {
-    margin-left: -15px;
+    margin-left: -21px;
 }
 
 footer .footer-column.fourth {
-    margin-left: -15px;
-    padding-left: 0;
+    margin-left: -20px;
 }
 
 footer .title {
@@ -749,11 +767,20 @@ footer .title {
     min-height: 35px;
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     display: block;
 }
 
 footer .footer-list {
+    padding-left: 0;
+    opacity: 0.6;
+}
+
+footer .footer-sub-title {
+    opacity: 0.6;
+}
+
+footer .footer-list-social {
     padding-left: 0;
 }
 
@@ -765,11 +792,13 @@ footer .footer-list li {
 }
 
 footer .socials:first-of-type {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 footer .socials {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-family: "Helvetica";
+    font-size: 12px;
 }
 
 footer .socials p {
@@ -900,9 +929,10 @@ footer .social-icon {
     text-decoration: none;
 }
 
-/*.event-card-footer {
-    height: 100%;
-}*/
+.event-card-content svg {
+    line-height: 1.5;
+    margin-right: 10px;
+}
 
 .event-title {
     font-size: 15px;
@@ -1202,7 +1232,7 @@ footer .social-icon {
     background: #f7f7f7;
 }
 
-.owl-carousel .owl-nav button i:hover {
+.owl-carousel .owl-nav button svg:hover {
     color: #313131;
 }
 
@@ -1223,8 +1253,8 @@ footer .social-icon {
     pointer-events: all;
 }
 
-.owl-carousel .owl-nav button i {
-    font-size: 80px;
+.owl-carousel .owl-nav button svg {
+    font-size: 40px;
     color: rgba(191, 191, 191, 0.51);
 }
 
@@ -1234,16 +1264,9 @@ button:focus {
     outline: none !important;
 }
 
-.map-and-price img {
+.map-and-price img, .map-and-price svg {
     margin-right: 10px;
 }
-
-.main-page {
-    /*margin-top: 60px;*/
-    /*margin-bottom: 40px;*/
-}
-
-
 
 /*------------slick-gallery----------*/
 
@@ -1348,6 +1371,7 @@ button:focus {
 
 .select2 .select2-selection--single .select2-selection__arrow {
     color: #4a90e2 !important;
+    font-size: 16px !important;
 }
 
 .text-article h1 {
@@ -1405,4 +1429,13 @@ button:focus {
     height: 7px;
     margin-top: 7px;
     margin-right: 10px;
+}
+
+.museum-filter-card-header {
+    height: 198px;
+    overflow: hidden;
+}
+
+.event-content-icon {
+    width: 20px;
 }

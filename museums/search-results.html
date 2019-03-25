@@ -6,27 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/font-awesome/font-awesome.min.css" />
-    <link rel="stylesheet" href="../css/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/style-adaptive.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/font-awesome/fontawesome.min.css"/>
+    <link rel="stylesheet" href="../css/owl-carousel/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/style-adaptive.css"/>
+    <link rel="stylesheet" href="../css/select.css"/>
+    <link rel="stylesheet" href="../css/slick/slick.css"/>
+    <link rel="stylesheet" href="../css/slick/slick-theme.css"/>
+    <link href="../css/select2.css" rel="stylesheet"/>
     <script src="../js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/fontawesome/fontawesome.min.js" type="text/javascript"></script>
     <script src="../js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
     <script src="../js/holder.min.js" type="text/javascript"></script>
-    <script src="../js/site.js" type="text/javascript"></script>
+    <script src="../js/select2.js"></script>
+    <script src="../js/filters.js" type="text/javascript"></script>
+    <script src="../js/slick/slick.min.js" type="text/javascript"></script>
+    <script src="../js/gallery.js" type="text/javascript"></script>
     <script src="../js/search-panel.js" type="text/javascript"></script>
+    <script src="../js/site.js" type="text/javascript"></script>
 </head>
 
 <body>
     <div class="container">
         <header>
             <div class="row header-block header-block-small bg-black">
-                <div class="header-block-top inner-container">
-                    <div class="row align-items-center">
-                        <div class="col">
+                <div class="col header-block-top inner-container header-container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
                             <div class="top-logo float-left">
                                 <img src="../images/mgt_logo.jpg" class="img-fluid">
                             </div>
@@ -34,13 +43,13 @@
                                 <img src="../images/dk_logo2.png" class="img-fluid">
                             </div>
                         </div>
-                        <div class="col d-flex justify-content-end align-items-center">
+                        <div class="d-flex justify-content-end align-items-center">
                             <div class="top-menu top-menu-block d-flex justify-content-center align-items-center">
                                 <div class="top-menu-item">
                                     <a href="news.html" class="text-pinkish-grey">Новости</a>
                                 </div>
                                 <div class="top-menu-item">
-                                    <a href="index.html" class="text-pinkish-grey">Музеи</a>
+                                    <a href="museums-main.html" class="text-pinkish-grey">Музеи</a>
                                 </div>
                                 <div class="top-menu-item">
                                     <a href="events.html" class="text-pinkish-grey">Мероприятия</a>
@@ -61,6 +70,13 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div id="search-panel" class="row bg-white-four">
+                <div class="form-container col-12 d-flex pt-20 pb-20">
+                    <form class="input-group">
+                        <input class="form-control bg-white-four" type="search" placeholder="Что ищем?">
+                    </form>
                 </div>
             </div>
         </header>
@@ -184,9 +200,10 @@
             </div>
 
         </main>
+
         <!-- Footer -->
-        <footer class="footer row mt-auto py-5 px-3 bg-black">
-            <div class="container">
+        <footer class="footer row">
+            <div class="container footer-container">
                 <div class="row">
                     <div class="col-2 footer-logo">
                         <a href="#" class="d-block text-right">
@@ -196,69 +213,69 @@
                     <div class="col-2 footer-column first">
                         <span class="text-white title">О компании</span>
                         <ul class="footer-list">
-                            <li><a href="#" class="text-pinkish-grey">Публичный отчет</a></li>
-                            <li><a href="#" class="text-pinkish-grey">Противодействие коррупции</a></li>
-                            <li><a href="#" class="text-pinkish-grey">Сведения об образовательной деятельности</a></li>
-                            <li><a href="#" class="text-pinkish-grey">Вакансии</a></li>
-                            <li><a href="#" class="text-pinkish-grey">Мы в реестре тур операторов</a></li>
+                            <li><a href="#" class="text-white">Публичный отчет</a></li>
+                            <li><a href="#" class="text-white">Противодействие коррупции</a></li>
+                            <li><a href="#" class="text-white">Сведения об образовательной деятельности</a></li>
+                            <li><a href="#" class="text-white">Вакансии</a></li>
+                            <li><a href="#" class="text-white">Мы в реестре тур операторов</a></li>
                         </ul>
                     </div>
                     <div class="col-2 footer-column second">
                         <span class="text-white title">Спецпроекты</span>
                         <ul class="footer-list">
-                            <li><a href="#" class="text-pinkish-grey">КИДПРО — конференция детского отдыха</a></li>
-                            <li><a href="#" class="text-pinkish-grey">Инклюзивный отдых</a></li>
-                            <li><a href="#" class="text-pinkish-grey">Музеи — детям</a></li>
-                            <li><a href="#" class="text-pinkish-grey">Карта «Музей в подарок»</a></li>
-                            <li><a href="#" class="text-pinkish-grey">Урок в музее</a></li>
-                            <li><a href="#" class="text-pinkish-grey">Экскурсионный чат-бот по Москве</a></li>
+                            <li><a href="#" class="text-white">КИДПРО — конференция детского отдыха</a></li>
+                            <li><a href="#" class="text-white">Инклюзивный отдых</a></li>
+                            <li><a href="#" class="text-white">Музеи — детям</a></li>
+                            <li><a href="#" class="text-white">Карта «Музей в подарок»</a></li>
+                            <li><a href="#" class="text-white">Урок в музее</a></li>
+                            <li><a href="#" class="text-white">Экскурсионный чат-бот по Москве</a></li>
                         </ul>
                     </div>
                     <div class="col-2 footer-column third">
                         <span class="text-white title">Исследования <br>Мосгортура</span>
                         <ul class="footer-list">
-                            <li><a href="#" class="text-pinkish-grey">Единый рейтинг лагерей</a></li>
-                            <li><a href="#" class="text-pinkish-grey">Московский стандарт детского отдыха</a></li>
-                            <li><a href="#" class="text-pinkish-grey">Музейные исследования</a></li>
+                            <li><a href="#" class="text-white">Единый рейтинг лагерей</a></li>
+                            <li><a href="#" class="text-white">Московский стандарт детского отдыха</a></li>
+                            <li><a href="#" class="text-white">Музейные исследования</a></li>
                         </ul>
                     </div>
                     <div class="col footer-column fourth">
-                        <span class="text-white title">Офисы продаж в МФЦ</span>
-                        <ul class="footer-list">
-                            <li><a href="#" class="text-pinkish-grey bold">Адреса и телефоны</a></li>
+                        <span class="text-white title mb-5">Офисы продаж в МФЦ</span>
+                        <div class="footer-list-social">
+                            <a href="#" class="footer-sub-title text-white fs-14 bold">Адреса и телефоны</a>
                             <div class="socials">
-                                <div class="text-pinkish-grey mb-10">
+                                <div class="footer-sub-title text-white mb-10">
                                     <span class="uppercase">Мосгортур. </span> Детский отдых
                                 </div>
                                 <div class="social-icons d-flex">
                                     <a href="#" class="social-icon social-vk border-dark-sky-blue text-dark-sky-blue">
-                                        <i class="fa fa-vk" aria-hidden="true"></i>
+                                        <i class="fab fa-vk"></i>
                                     </a>
                                     <a href="#" class="social-icon social-odnoklassniki border-dark-peach text-dark-peach">
-                                        <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                                        <i class="fab fa-odnoklassniki"></i>
                                     </a>
                                     <a href="#" class="social-icon social-facebook border-dusky-blue text-dusky-blue">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <i class="fab fa-facebook-f"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="socials">
-                                <div class="text-pinkish-grey mb-10">
+                                <div class="footer-sub-title text-white mb-10">
                                     <span class="uppercase">Мосгортур. </span> Музеи
                                 </div>
                                 <div class="social-icons d-flex">
                                     <a href="#" class="social-icon social-vk border-dark-sky-blue text-dark-sky-blue">
-                                        <i class="fa fa-vk" aria-hidden="true"></i>
+                                        <i class="fab fa-vk"></i>
                                     </a>
                                     <a href="#" class="social-icon social-odnoklassniki border-dark-peach text-dark-peach">
-                                        <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                                        <i class="fab fa-odnoklassniki"></i>
                                     </a>
                                     <a href="#" class="social-icon social-facebook border-dusky-blue text-dusky-blue">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <i class="fab fa-facebook-f"></i>
                                     </a>
                                 </div>
                             </div>
-                        </ul>
+                        </div>
                     </div>
 
                 </div>

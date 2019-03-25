@@ -590,4 +590,12 @@
     background-color: rgba(9, 10, 74, 0.7)
 }
 
+.filter-purple {
+    background-color: rgba(55, 20, 74, 0.7);
+}
+
+.filter-green {
+    background-color: rgba(12, 90, 81, 0.7);
+}
+
 /*-------------------/colors----------------------------*/

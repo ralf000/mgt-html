@@ -1,7 +1,7 @@
 $(function () {
 
-    var arrowDown = '<i class="fa fa-angle-down" aria-hidden="true"></i>';
-    var arrowUp = '<i class="fa fa-angle-up" aria-hidden="true"></i>';
+    var arrowDown = '<i class="fas fa-chevron-down"></i>';
+    var arrowUp = '<i class="fas fa-chevron-up"></i>';
     var calendarIcon = '<img src="holder.js/14x14" class="img-fluid">'; // иконка календаря
 
     $(".filter-selector").select2({
