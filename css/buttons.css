@@ -125,7 +125,7 @@
 }
 
 .filter-tag .close {
-    line-height: 0;
+    line-height: 0.8;
     margin-left: 5px;
     font-weight: normal;
     color: #eeeeee;
