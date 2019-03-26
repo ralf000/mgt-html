@@ -11,6 +11,11 @@
     text-transform: none;
 }
 
+.btn-md {
+    padding: 9px 12px 5px 17px !important;
+    border-radius: 6px
+}
+
 .btn-long {
     padding: 7px 17px 4px !important;
     min-width: 82px;
@@ -139,8 +144,8 @@
 }
 
 .clear-filters {
-    padding: 10px 30px;
-    margin-bottom: 1px;
+    padding: 13px 20px 8px;
+    min-width: 155px;
 }
 
 .ticket-btn {

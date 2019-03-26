@@ -89,12 +89,21 @@
     border-bottom: none;
 }
 
-.selector-box:not(:last-child) {
-    margin-right: 10px;
+.selector-box {
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .selector-title {
     margin-bottom: 7px;
+}
+
+.selector-box:first-child {
+    padding-left: 15px;
+}
+
+.selector-box:last-child {
+    padding-right: 15px;
 }
 
 /*------------/select----------*/

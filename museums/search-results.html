@@ -7,18 +7,17 @@
     <title></title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/font-awesome/fontawesome.min.css"/>
+    <link rel="stylesheet" href="../css/fontawesome/fontawesome.min.css"/>
     <link rel="stylesheet" href="../css/owl-carousel/owl.carousel.min.css"/>
     <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.min.css"/>
-    <link rel="stylesheet" href="../css/style.css"/>
-    <link rel="stylesheet" href="../css/style-adaptive.css"/>
     <link rel="stylesheet" href="../css/select.css"/>
     <link rel="stylesheet" href="../css/slick/slick.css"/>
     <link rel="stylesheet" href="../css/slick/slick-theme.css"/>
-    <link href="../css/select2.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/select2.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/style-adaptive.css"/>
     <script src="../js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="../js/fontawesome/fontawesome.min.js" type="text/javascript"></script>
     <script src="../js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
     <script src="../js/holder.min.js" type="text/javascript"></script>
     <script src="../js/select2.js"></script>
@@ -30,259 +29,261 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="row header-block header-block-small bg-black">
-                <div class="col header-block-top inner-container header-container">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <div class="top-logo float-left">
-                                <img src="../images/mgt_logo.jpg" class="img-fluid">
+<div class="container">
+    <header>
+        <div class="row header-block header-block-small bg-black">
+            <div class="col header-block-top inner-container header-container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <div class="top-logo float-left">
+                            <img src="../images/mgt_logo.jpg">
+                        </div>
+                        <div class="top-logo float-left">
+                            <img src="../images/dk_logo2.png">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="top-menu top-menu-block d-flex justify-content-center align-items-center">
+                            <div class="top-menu-item">
+                                <a href="news.html" class="text-pinkish-grey">Новости</a>
                             </div>
-                            <div class="top-logo float-left">
-                                <img src="../images/dk_logo2.png" class="img-fluid">
+                            <div class="top-menu-item">
+                                <a href="museums-main.html" class="text-pinkish-grey">Музеи</a>
+                            </div>
+                            <div class="top-menu-item">
+                                <a href="events.html" class="text-pinkish-grey">Мероприятия</a>
+                            </div>
+                            <div class="top-menu-item">
+                                <a href="#" class="text-pinkish-grey">Контакты</a>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-end align-items-center">
-                            <div class="top-menu top-menu-block d-flex justify-content-center align-items-center">
-                                <div class="top-menu-item">
-                                    <a href="news.html" class="text-pinkish-grey">Новости</a>
-                                </div>
-                                <div class="top-menu-item">
-                                    <a href="museums-main.html" class="text-pinkish-grey">Музеи</a>
-                                </div>
-                                <div class="top-menu-item">
-                                    <a href="events.html" class="text-pinkish-grey">Мероприятия</a>
-                                </div>
-                                <div class="top-menu-item">
-                                    <a href="#" class="text-pinkish-grey">Контакты</a>
-                                </div>
+                        <div class="top-search-link top-menu-block d-flex justify-content-center align-items-center">
+                            <a href="#">
+                                '<img src="../images/icons/icon_search.png">
+                            </a>
+                        </div>
+                        <div class="top-menu-link top-menu-block d-flex justify-content-center align-items-center">
+                            <a href="#">
+                                <img src="../images/burger-menu.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="search-panel" class="row bg-white-four">
+            <div class="form-container col-12 d-flex pt-20 pb-20">
+                <form class="input-group">
+                    <input class="form-control bg-white-four" type="search" placeholder="Что ищем?">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-page">
+        <div class="inner-container">
+            <div class="events-block">
+                <div class="events-block-header m-auto">
+                    <ul class="items-choose d-flex flex-nowrap justify-content-between align-items-center nav nav-tabs"
+                        role="tablist">
+                        <li class="item-choose border-pinkish-grey nav-item">
+                            <a href="#news-result" class="nav-link active text-pinkish-grey" data-toggle="tab"
+                               role="tab">Новости</a>
+                        </li>
+                        <li class="item-choose border-pinkish-grey nav-item">
+                            <a href="#materials-result" class="nav-link text-pinkish-grey" data-toggle="tab" role="tab">Материалы</a>
+                        </li>
+                        <li class="item-choose border-pinkish-grey nav-item">
+                            <a href="#events-result" class="nav-link text-pinkish-grey" data-toggle="tab" role="tab">Мероприятия</a>
+                        </li>
+                        <li class="item-choose border-pinkish-grey nav-item">
+                            <a href="#museums-result" class="nav-link text-pinkish-grey" data-toggle="tab" role="tab">Музеи</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="search-results tab-content">
+                    <div class="tab-pane fade show active" id="news-result" role="tabpanel">
+
+                        <div class="result-item d-flex">
+                            <div class="date d-flex flex-column">
+                                <span class="text-dark-peach mb-0">01.02.2019</span>
+                                <span class="text-steel">14:10</span>
                             </div>
-                            <div class="top-search-link top-menu-block d-flex justify-content-center align-items-center">
-                                <a href="#">
-                                    <img src="../images/icons/icon_search.png" class="img-fluid">
+                            <div class="item-info">
+                                <span class="text-black"><a href="news-item.html">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</a></span>
+                            </div>
+                        </div>
+                        <div class="result-item d-flex">
+                            <div class="date d-flex flex-column">
+                                <span class="text-dark-peach mb-0">01.02.2019</span>
+                                <span class="text-steel">14:10</span>
+                            </div>
+                            <div class="item-info">
+                                <span class="text-black"><a href="news-item.html">Многоуважаемый сервант и деревенский Пушкин. Шесть выставок, которые скоро закончатся</a> </span>
+                            </div>
+                        </div>
+                        <div class="result-item d-flex">
+                            <div class="date d-flex flex-column">
+                                <span class="text-dark-peach mb-0">01.02.2019</span>
+                                <span class="text-steel">14:10</span>
+                            </div>
+                            <div class="item-info">
+                                <span class="text-black"><a href="news-item.html">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</a></span>
+                            </div>
+                        </div>
+                        <div class="result-item d-flex">
+                            <div class="date d-flex flex-column">
+                                <span class="text-dark-peach mb-0">01.02.2019</span>
+                                <span class="text-steel">14:10</span>
+                            </div>
+                            <div class="item-info">
+                                <span class="text-black"><a href="news-item.html">Многоуважаемый сервант и деревенский Пушкин. Шесть выставок, которые скоро закончатся</a> </span>
+                            </div>
+                        </div>
+                        <div class="result-item d-flex">
+                            <div class="date d-flex flex-column">
+                                <span class="text-dark-peach mb-0">01.02.2019</span>
+                                <span class="text-steel">14:10</span>
+                            </div>
+                            <div class="item-info">
+                                <span class="text-black"><a href="news-item.html">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</a></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="materials-result" role="tabpanel">
+                        <div class="result-item d-flex">
+                            <div class="item-image">
+                                <img src="holder.js/88x88">
+                            </div>
+                            <div class="item-info text-black-two">
+                                <a href="event-item.html" class="d-block">
+                                    <h3 class="item-info-title mb-10">Современное искусство России 1990-х годов</h3>
+                                    <span>Направление исследований, сосредоточенное на 1990-х годах как на поворотном пункте в развитии современного искусства по всему миру </span>
                                 </a>
                             </div>
-                            <div class="top-menu-link top-menu-block d-flex justify-content-center align-items-center">
-                                <a href="#">
-                                    <img src="../images/burger-menu.png" class="img-fluid">
+                        </div>
+                        <div class="result-item d-flex">
+                            <div class="item-image">
+                                <img src="holder.js/88x88">
+                            </div>
+                            <div class="item-info text-black-two">
+                                <a href="event-item.html" class="d-block">
+                                    <h3 class="item-info-title mb-10">Современное искусство России 1990-х годов</h3>
+                                    <span>Направление исследований, сосредоточенное на 1990-х годах как на поворотном пункте в развитии современного искусства по всему миру </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="result-item d-flex">
+                            <div class="item-image">
+                                <img src="holder.js/88x88">
+                            </div>
+                            <div class="item-info text-black-two ">
+                                <a href="event-item.html" class="d-block">
+                                    <h3 class="item-info-title mb-10">Современное искусство России 1990-х годов</h3>
+                                    <span>Направление исследований, сосредоточенное на 1990-х годах как на поворотном пункте в развитии современного искусства по всему миру </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="events-result" role="tabpanel">
+                        <p>Мероприятия</p>
+                    </div>
+                    <div class="tab-pane fade" id="museums-result" role="tabpanel">
+                        <p>Музеи</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer row">
+        <div class="container footer-container">
+            <div class="row">
+                <div class="col-2 footer-logo">
+                    <a href="#" class="d-block text-right">
+                        <img src="../images/mgt_square_logo.jpg" class="logo">
+                    </a>
+                </div>
+                <div class="col-2 footer-column first">
+                    <span class="text-white title">О компании</span>
+                    <ul class="footer-list">
+                        <li><a href="#" class="text-white">Публичный отчет</a></li>
+                        <li><a href="#" class="text-white">Противодействие коррупции</a></li>
+                        <li><a href="#" class="text-white">Сведения об образовательной деятельности</a></li>
+                        <li><a href="#" class="text-white">Вакансии</a></li>
+                        <li><a href="#" class="text-white">Мы в реестре тур операторов</a></li>
+                    </ul>
+                </div>
+                <div class="col-2 footer-column second">
+                    <span class="text-white title">Спецпроекты</span>
+                    <ul class="footer-list">
+                        <li><a href="#" class="text-white">КИДПРО — конференция детского отдыха</a></li>
+                        <li><a href="#" class="text-white">Инклюзивный отдых</a></li>
+                        <li><a href="#" class="text-white">Музеи — детям</a></li>
+                        <li><a href="#" class="text-white">Карта «Музей в подарок»</a></li>
+                        <li><a href="#" class="text-white">Урок в музее</a></li>
+                        <li><a href="#" class="text-white">Экскурсионный чат-бот по Москве</a></li>
+                    </ul>
+                </div>
+                <div class="col-2 footer-column third">
+                    <span class="text-white title">Исследования <br>Мосгортура</span>
+                    <ul class="footer-list">
+                        <li><a href="#" class="text-white">Единый рейтинг лагерей</a></li>
+                        <li><a href="#" class="text-white">Московский стандарт детского отдыха</a></li>
+                        <li><a href="#" class="text-white">Музейные исследования</a></li>
+                    </ul>
+                </div>
+                <div class="col footer-column fourth">
+                    <span class="text-white title mb-5">Офисы продаж в МФЦ</span>
+                    <div class="footer-list-social">
+                        <a href="#" class="footer-sub-title text-white fs-14 bold">Адреса и телефоны</a>
+                        <div class="socials">
+                            <div class="footer-sub-title text-white mb-10">
+                                <span class="uppercase">Мосгортур. </span> Детский отдых
+                            </div>
+                            <div class="social-icons d-flex">
+                                <a href="#" class="social-icon social-vk border-dark-sky-blue text-dark-sky-blue">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                                <a href="#" class="social-icon social-odnoklassniki border-dark-peach text-dark-peach">
+                                    <i class="fab fa-odnoklassniki"></i>
+                                </a>
+                                <a href="#" class="social-icon social-facebook border-dusky-blue text-dusky-blue">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="socials">
+                            <div class="footer-sub-title text-white mb-10">
+                                <span class="uppercase">Мосгортур. </span> Музеи
+                            </div>
+                            <div class="social-icons d-flex">
+                                <a href="#" class="social-icon social-vk border-dark-sky-blue text-dark-sky-blue">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                                <a href="#" class="social-icon social-odnoklassniki border-dark-peach text-dark-peach">
+                                    <i class="fab fa-odnoklassniki"></i>
+                                </a>
+                                <a href="#" class="social-icon social-facebook border-dusky-blue text-dusky-blue">
+                                    <i class="fab fa-facebook-f"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="search-panel" class="row bg-white-four">
-                <div class="form-container col-12 d-flex pt-20 pb-20">
-                    <form class="input-group">
-                        <input class="form-control bg-white-four" type="search" placeholder="Что ищем?">
-                    </form>
-                </div>
-            </div>
-        </header>
-
-        <main class="main-page">
-            <div class="inner-container">
-                <div class="events-block">
-                    <div class="events-block-header m-auto">
-                        <ul class="items-choose d-flex flex-nowrap justify-content-between align-items-center nav nav-tabs" role="tablist">
-                            <li class="item-choose border-pinkish-grey nav-item">
-                                <a href="#news-result" class="nav-link active text-pinkish-grey" data-toggle="tab" role="tab">Новости</a>
-                            </li>
-                            <li class="item-choose border-pinkish-grey nav-item">
-                                <a href="#materials-result" class="nav-link text-pinkish-grey" data-toggle="tab" role="tab">Материалы</a>
-                            </li>
-                            <li class="item-choose border-pinkish-grey nav-item">
-                                <a href="#events-result" class="nav-link text-pinkish-grey" data-toggle="tab" role="tab">Мероприятия</a>
-                            </li>
-                            <li class="item-choose border-pinkish-grey nav-item">
-                                <a href="#museums-result" class="nav-link text-pinkish-grey" data-toggle="tab" role="tab">Музеи</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="search-results tab-content">
-                        <div class="tab-pane fade show active" id="news-result" role="tabpanel">
-
-                            <div class="result-item d-flex">
-                                <div class="date d-flex flex-column">
-                                    <span class="text-dark-peach mb-0">01.02.2019</span>
-                                    <span class="text-steel">14:10</span>
-                                </div>
-                                <div class="item-info">
-                                    <span class="text-black"><a href="#">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</a></span>
-                                </div>
-                            </div>
-                            <div class="result-item d-flex">
-                                <div class="date d-flex flex-column">
-                                    <span class="text-dark-peach mb-0">01.02.2019</span>
-                                    <span class="text-steel">14:10</span>
-                                </div>
-                                <div class="item-info">
-                                    <span class="text-black"><a href="#">Многоуважаемый сервант и деревенский Пушкин. Шесть выставок, которые скоро закончатся</a> </span>
-                                </div>
-                            </div>
-                            <div class="result-item d-flex">
-                                <div class="date d-flex flex-column">
-                                    <span class="text-dark-peach mb-0">01.02.2019</span>
-                                    <span class="text-steel">14:10</span>
-                                </div>
-                                <div class="item-info">
-                                    <span class="text-black"><a href="#">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</a></span>
-                                </div>
-                            </div>
-                            <div class="result-item d-flex">
-                                <div class="date d-flex flex-column">
-                                    <span class="text-dark-peach mb-0">01.02.2019</span>
-                                    <span class="text-steel">14:10</span>
-                                </div>
-                                <div class="item-info">
-                                    <span class="text-black"><a href="#">Многоуважаемый сервант и деревенский Пушкин. Шесть выставок, которые скоро закончатся</a> </span>
-                                </div>
-                            </div>
-                            <div class="result-item d-flex">
-                                <div class="date d-flex flex-column">
-                                    <span class="text-dark-peach mb-0">01.02.2019</span>
-                                    <span class="text-steel">14:10</span>
-                                </div>
-                                <div class="item-info">
-                                    <span class="text-black"><a href="#">Послушать воспоминания ветеранов и погрузиться в солдатский быт: музеи приглашают отметить...</a></span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="tab-pane fade" id="materials-result" role="tabpanel">
-                            <div class="result-item d-flex">
-                                <div class="item-image">
-                                    <img src="holder.js/88x88">
-                                </div>
-                                <div class="item-info text-black-two">
-                                    <a href="#" class="d-block">
-                                        <h3 class="item-info-title mb-10">Современное искусство России 1990-х годов</h3>
-                                        <span>Направление исследований, сосредоточенное на 1990-х годах как на поворотном пункте в развитии современного искусства по всему миру </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="result-item d-flex">
-                                <div class="item-image">
-                                    <img src="holder.js/88x88">
-                                </div>
-                                <div class="item-info text-black-two">
-                                    <a href="#" class="d-block">
-                                        <h3 class="item-info-title mb-10">Современное искусство России 1990-х годов</h3>
-                                        <span>Направление исследований, сосредоточенное на 1990-х годах как на поворотном пункте в развитии современного искусства по всему миру </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="result-item d-flex">
-                                <div class="item-image">
-                                    <img src="holder.js/88x88">
-                                </div>
-                                <div class="item-info text-black-two ">
-                                    <a href="#" class="d-block">
-                                        <h3 class="item-info-title mb-10">Современное искусство России 1990-х годов</h3>
-                                        <span>Направление исследований, сосредоточенное на 1990-х годах как на поворотном пункте в развитии современного искусства по всему миру </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="events-result" role="tabpanel">
-                            <p>Мероприятия</p>
-                        </div>
-                        <div class="tab-pane fade" id="museums-result" role="tabpanel">
-                            <p>Музеи</p>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer row">
-            <div class="container footer-container">
-                <div class="row">
-                    <div class="col-2 footer-logo">
-                        <a href="#" class="d-block text-right">
-                            <img src="../images/mgt_square_logo.jpg" class="img-fluid logo">
-                        </a>
-                    </div>
-                    <div class="col-2 footer-column first">
-                        <span class="text-white title">О компании</span>
-                        <ul class="footer-list">
-                            <li><a href="#" class="text-white">Публичный отчет</a></li>
-                            <li><a href="#" class="text-white">Противодействие коррупции</a></li>
-                            <li><a href="#" class="text-white">Сведения об образовательной деятельности</a></li>
-                            <li><a href="#" class="text-white">Вакансии</a></li>
-                            <li><a href="#" class="text-white">Мы в реестре тур операторов</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2 footer-column second">
-                        <span class="text-white title">Спецпроекты</span>
-                        <ul class="footer-list">
-                            <li><a href="#" class="text-white">КИДПРО — конференция детского отдыха</a></li>
-                            <li><a href="#" class="text-white">Инклюзивный отдых</a></li>
-                            <li><a href="#" class="text-white">Музеи — детям</a></li>
-                            <li><a href="#" class="text-white">Карта «Музей в подарок»</a></li>
-                            <li><a href="#" class="text-white">Урок в музее</a></li>
-                            <li><a href="#" class="text-white">Экскурсионный чат-бот по Москве</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2 footer-column third">
-                        <span class="text-white title">Исследования <br>Мосгортура</span>
-                        <ul class="footer-list">
-                            <li><a href="#" class="text-white">Единый рейтинг лагерей</a></li>
-                            <li><a href="#" class="text-white">Московский стандарт детского отдыха</a></li>
-                            <li><a href="#" class="text-white">Музейные исследования</a></li>
-                        </ul>
-                    </div>
-                    <div class="col footer-column fourth">
-                        <span class="text-white title mb-5">Офисы продаж в МФЦ</span>
-                        <div class="footer-list-social">
-                            <a href="#" class="footer-sub-title text-white fs-14 bold">Адреса и телефоны</a>
-                            <div class="socials">
-                                <div class="footer-sub-title text-white mb-10">
-                                    <span class="uppercase">Мосгортур. </span> Детский отдых
-                                </div>
-                                <div class="social-icons d-flex">
-                                    <a href="#" class="social-icon social-vk border-dark-sky-blue text-dark-sky-blue">
-                                        <i class="fab fa-vk"></i>
-                                    </a>
-                                    <a href="#" class="social-icon social-odnoklassniki border-dark-peach text-dark-peach">
-                                        <i class="fab fa-odnoklassniki"></i>
-                                    </a>
-                                    <a href="#" class="social-icon social-facebook border-dusky-blue text-dusky-blue">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="socials">
-                                <div class="footer-sub-title text-white mb-10">
-                                    <span class="uppercase">Мосгортур. </span> Музеи
-                                </div>
-                                <div class="social-icons d-flex">
-                                    <a href="#" class="social-icon social-vk border-dark-sky-blue text-dark-sky-blue">
-                                        <i class="fab fa-vk"></i>
-                                    </a>
-                                    <a href="#" class="social-icon social-odnoklassniki border-dark-peach text-dark-peach">
-                                        <i class="fab fa-odnoklassniki"></i>
-                                    </a>
-                                    <a href="#" class="social-icon social-facebook border-dusky-blue text-dusky-blue">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
 
             </div>
-        </footer>
-    </div>
+
+        </div>
+    </footer>
+</div>
 </body>
 
 </html>

@@ -7,18 +7,17 @@
     <title></title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/font-awesome/fontawesome.min.css"/>
+    <link rel="stylesheet" href="../css/fontawesome/fontawesome.min.css"/>
     <link rel="stylesheet" href="../css/owl-carousel/owl.carousel.min.css"/>
     <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.min.css"/>
-    <link rel="stylesheet" href="../css/style.css"/>
-    <link rel="stylesheet" href="../css/style-adaptive.css"/>
     <link rel="stylesheet" href="../css/select.css"/>
     <link rel="stylesheet" href="../css/slick/slick.css"/>
     <link rel="stylesheet" href="../css/slick/slick-theme.css"/>
-    <link href="../css/select2.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/select2.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/style-adaptive.css"/>
     <script src="../js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="../js/fontawesome/fontawesome.min.js" type="text/javascript"></script>
     <script src="../js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
     <script src="../js/holder.min.js" type="text/javascript"></script>
     <script src="../js/select2.js"></script>
@@ -37,10 +36,10 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
                             <div class="top-logo float-left">
-                                <img src="../images/mgt_logo.jpg" class="img-fluid">
+                                <img src="../images/mgt_logo.jpg">
                             </div>
                             <div class="top-logo float-left">
-                                <img src="../images/dk_logo2.png" class="img-fluid">
+                                <img src="../images/dk_logo2.png">
                             </div>
                         </div>
                         <div class="d-flex justify-content-end align-items-center">
@@ -60,12 +59,12 @@
                             </div>
                             <div class="top-search-link top-menu-block d-flex justify-content-center align-items-center">
                                 <a href="#">
-                                    <img src="../images/icons/icon_search.png" class="img-fluid">
+                                    '<img src="../images/icons/icon_search.png">
                                 </a>
                             </div>
                             <div class="top-menu-link top-menu-block d-flex justify-content-center align-items-center">
                                 <a href="#">
-                                    <img src="../images/burger-menu.png" class="img-fluid">
+                                    <img src="../images/burger-menu.png">
                                 </a>
                             </div>
                         </div>
@@ -84,100 +83,102 @@
         <main class="main-page">
             <div class="inner-container">
 
-                <div class="block-title">
-                            <h3 class="mb-25 d-flex align-items-center">
-                                <img src="holder.js/16x16">
-                                <span>Найдено</span>
-                                <div class="dot-md bg-warm-grey"></div>
-                                <span class="text-warm-grey"><strong>4</strong></span>
-                            </h3>
-                        </div>
-                
-                <div class=" mb-20 d-flex justify-content-between align-items-end">
-                    <div class="filter-selectors d-flex">
-                        <div class="selector-box">
-                            <p class="selector-title text-warm-grey fs-13">Музей</p>
-                            <select class="filter-selector" name="museum">
-                                <option value="all">Все музеи</option>
-                                <option value="first">Пушкинский музей</option>
-                                <option value="second">Третьяковская галерея</option>
-                                <option value="third">Исторический музей</option>
-                                <option value="fourth">Палеонтологический музей</option>
-                                <option value="fifth">Музей космонавтики</option>
-                            </select>
-                        </div>
-                        <div class="selector-box">
-                            <p class="selector-title text-warm-grey fs-13">Площадка</p>
-                            <select class="filter-selector" name="museum">
-                                <option value="all">Все площадки</option>
-                                <option value="first">Пушкинский музей</option>
-                                <option value="second">Третьяковская галерея</option>
-                                <option value="third">Исторический музей</option>
-                                <option value="fourth">Палеонтологический музей</option>
-                                <option value="fifth">Музей космонавтики</option>
-                            </select>
-                        </div>
-                        <div class="selector-box">
-                            <p class="selector-title text-warm-grey fs-13">Метро</p>
-                            <select class="filter-selector" name="museum">
-                                <option value="all">Все станции</option>
-                                <option value="first">Пушкинский музей</option>
-                                <option value="second">Третьяковская галерея</option>
-                                <option value="third">Исторический музей</option>
-                                <option value="fourth">Палеонтологический музей</option>
-                                <option value="fifth">Музей космонавтики</option>
-                            </select>
-                        </div>
-                        <div class="selector-box">
-                            <p class="selector-title text-warm-grey fs-13">Льготы</p>
-                            <select class="filter-selector" name="museum">
-                                <option value="all">Все варианты</option>
-                                <option value="first">Пушкинский музей</option>
-                                <option value="second">Третьяковская галерея</option>
-                                <option value="third">Исторический музей</option>
-                                <option value="fourth">Палеонтологический музей</option>
-                                <option value="fifth">Музей космонавтики</option>
-                            </select>
-                        </div>
+                <div class="mt-40">
+                    <div class="block-title">
+                        <h3 class="mb-25 d-flex align-items-center">
+                            <img src="holder.js/16x16">
+                            <span>Найдено</span>
+                            <div class="dot-md bg-warm-grey"></div>
+                            <span class="text-warm-grey"><strong>4</strong></span>
+                        </h3>
                     </div>
 
-                    <div class="d-flex justify-content-center">
-                        <a href="#" class="btn btn-outline-orange clear-filters">Очистить фильтры</a>
+                    <div class=" mb-20 d-flex justify-content-between align-items-end">
+                        <div class="filter-selectors d-flex">
+                            <div class="selector-box">
+                                <p class="selector-title text-warm-grey fs-13">Музей</p>
+                                <select class="filter-selector" name="museum">
+                                    <option value="all">Все музеи</option>
+                                    <option value="first">Пушкинский музей</option>
+                                    <option value="second">Третьяковская галерея</option>
+                                    <option value="third">Исторический музей</option>
+                                    <option value="fourth">Палеонтологический музей</option>
+                                    <option value="fifth">Музей космонавтики</option>
+                                </select>
+                            </div>
+                            <div class="selector-box">
+                                <p class="selector-title text-warm-grey fs-13">Площадка</p>
+                                <select class="filter-selector" name="museum">
+                                    <option value="all">Все площадки</option>
+                                    <option value="first">Пушкинский музей</option>
+                                    <option value="second">Третьяковская галерея</option>
+                                    <option value="third">Исторический музей</option>
+                                    <option value="fourth">Палеонтологический музей</option>
+                                    <option value="fifth">Музей космонавтики</option>
+                                </select>
+                            </div>
+                            <div class="selector-box">
+                                <p class="selector-title text-warm-grey fs-13">Метро</p>
+                                <select class="filter-selector" name="museum">
+                                    <option value="all">Все станции</option>
+                                    <option value="first">Пушкинский музей</option>
+                                    <option value="second">Третьяковская галерея</option>
+                                    <option value="third">Исторический музей</option>
+                                    <option value="fourth">Палеонтологический музей</option>
+                                    <option value="fifth">Музей космонавтики</option>
+                                </select>
+                            </div>
+                            <div class="selector-box">
+                                <p class="selector-title text-warm-grey fs-13">Льготы</p>
+                                <select class="filter-selector" name="museum">
+                                    <option value="all">Все варианты</option>
+                                    <option value="first">Пушкинский музей</option>
+                                    <option value="second">Третьяковская галерея</option>
+                                    <option value="third">Исторический музей</option>
+                                    <option value="fourth">Палеонтологический музей</option>
+                                    <option value="fifth">Музей космонавтики</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn btn-outline-orange clear-filters">Очистить фильтры</a>
+                        </div>
+
                     </div>
 
-                </div>
-
-                <div class="filter-tags-container col-10 pl-0 d-flex align-items-center flex-wrap mb-30">
-                    <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
-                        <span>Московский музей современного искусства</span>
-                        <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </a>
-                    <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
-                        <span>Музей-мастерская Зураба Церетели</span>
-                        <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </a>
-                    <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
-                        <span>01.02.2019–20.02.2019</span>
-                        <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </a>
-                    <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
-                        <span>Краснопресненская</span>
-                        <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </a>
-                    <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
-                        <span>Дети-инвалиды</span>
-                        <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </a>
+                    <div class="filter-tags-container col-10 pl-0 d-flex align-items-center flex-wrap mb-30">
+                        <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
+                            <span>Московский музей современного искусства</span>
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </a>
+                        <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
+                            <span>Музей-мастерская Зураба Церетели</span>
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </a>
+                        <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
+                            <span>01.02.2019–20.02.2019</span>
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </a>
+                        <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
+                            <span>Краснопресненская</span>
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </a>
+                        <a href="#" class="badge badge-light filter-tag d-flex align-items-center">
+                            <span>Дети-инвалиды</span>
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="events-block">
@@ -227,7 +228,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -271,7 +272,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -315,7 +316,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -364,7 +365,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -408,7 +409,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -461,7 +462,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -505,7 +506,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -549,7 +550,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -598,7 +599,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -642,7 +643,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -695,7 +696,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -739,7 +740,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -783,7 +784,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -832,7 +833,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -876,7 +877,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -929,7 +930,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -973,7 +974,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -1017,7 +1018,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -1066,7 +1067,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -1110,7 +1111,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -1163,7 +1164,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -1207,7 +1208,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -1251,7 +1252,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -1290,7 +1291,7 @@
 
             <div class="mt-35">
                 <div class="row subscription bg-dark-indigo">
-                    <div class="inner-inner-container">
+                    <div class="col-12 inner-inner-container">
                         <div class="row align-items-end">
                             <div class="col subscription-text">
                                 <div class="media">
@@ -1305,7 +1306,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col subscription-form pl-30">
+                            <div class="col subscription-form ml-40">
                                 <form action="">
                                     <div class="form-inline">
                                         <input type="email" class="form-control" id="subscription-email" placeholder="Ваш e-mail">
@@ -1354,7 +1355,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -1398,7 +1399,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -1442,7 +1443,7 @@
                                             </div>
                                         </div>
                                         <div class="event-card-content">
-                                            <h3 class="mb-10"><a href="#">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
+                                            <h3 class="mb-10"><a href="event-item.html">Выставка Евгений Антуфьев и Дмитрий Краснопевцев: Диалог. Когда искусство становится частью ландшафта. Часть III, Москва</a></h3>
                                             <p class="info fs-15 mb-15">Третья и заключительная часть диалогов художника Евгения Антуфьева и мастеров прошлого...</p>
                                             <div class="event-content-footer fs-12">
                                                 <div class="media">
@@ -1486,7 +1487,7 @@
                 <div class="row">
                     <div class="col-2 footer-logo">
                         <a href="#" class="d-block text-right">
-                            <img src="../images/mgt_square_logo.jpg" class="img-fluid logo">
+                            <img src="../images/mgt_square_logo.jpg" class="logo">
                         </a>
                     </div>
                     <div class="col-2 footer-column first">
